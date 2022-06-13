@@ -1,0 +1,6 @@
+1. Vaishali - whole homepage except navbar
+2. Bishal - navbar and footer
+3. Sourav - signin and signup and new(whole page with filter)
+4. Heemant - individual page 
+5. Pooja - categeories-computer-wholepage
+6. akash - cart-payment-address-confirmation
