@@ -140,8 +140,9 @@ let display1 = (data1) => {
 }
 display1(data1)
 let datainlocal = (el)=>{
-   localStorage.setItem("item",JSON.stringify(el))
- }
+  localStorage.setItem("item",JSON.stringify(el))
+  window.location.href="../showdetaileddata/showdata.html"
+}
 
 var data2 = [{
   image: "https://img.gkbcdn.com/bn/2205/488x2743-628f62882b40c91f8cd36998._p1_.jpg",
