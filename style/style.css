@@ -1,11 +1,18 @@
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
+
+* {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 590px;
   position: relative;
   margin: auto;
-  margin-right: -30px;
+  margin-right: -140px;
 }
 
 /* Hide the images by default */
@@ -14,7 +21,8 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -36,8 +44,9 @@
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -66,19 +75,25 @@
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  margin-top: 400px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  
+
 }
-#dot{
+
+#dot {
   position: relative;
-  right: 300px;
-  bottom:-60px;
+  display: inline;
+  right: 210px;
+  top: 470px;
+  width: 150px;
+
+
 }
-.active, .dot:hover {
+
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -89,16 +104,471 @@
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
-#rightbox{
-  border: 1px solid black;
+
+#rightbox {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   width: 50%;
-  height: 520px;
+  height: 540px;
   margin-right: 17px;
   margin-left: 0px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+
 }
-#uppermost{
+
+#uppermost {
   display: flex;
+}
+
+.imagepro {
+  width: 100%;
+  height: 140px;
+}
+
+.offer {
+  background-color: red;
+  width: 50%;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 0px;
+  color: aliceblue;
+  font-size: 15px;
+}
+
+#rightbox>div {
+  margin: auto;
+  /* text-align: center; */
+
+}
+
+.price {
+  font-size: 20px;
+  margin-top: -12px;
+  font-weight: 700;
+  margin-left: 0px;
+}
+
+h3 {
+  width: 20%;
+  height: 30px;
+}
+
+#blog {
+  width: 100%;
+  margin: auto;
+  height: 340px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 14px;
+
+
+}
+
+.img2 {
+  width: 100%;
+  height: 200px;
+}
+
+.dis {
+  color: #717171;
+
+}
+
+#Showdata {
+  display: grid;
+  height: 340px;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: auto;
+  margin-top: 0px;
+  gap: 20px;
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+  position: relative;
+  width: 100%;
+  margin-left: 30px;
+
+}
+
+#Showdata>div {
+  height: 350px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  text-align: center;
+  margin-top: 12px;
+  border-radius: 12px;
+
+}
+
+#outerdiv {
+  overflow: hidden;
+}
+
+#Showdata::-webkit-scrollbar {
+  display: none;
+}
+
+.fwd {
+  width: 30px;
+  position: absolute;
+  background-color: rgb(252, 247, 247);
+  border: 0ch;
+  height: 40px;
+  margin-top: 160px;
+  left: 1200px;
+}
+
+.pre {
+  position: absolute;
+  left: 370px;
+  margin-top: 160px;
+  border: 0ch;
+  width: 30px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+.pre:hover,
+.fwd:hover {
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#outof1slide {
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+
+.sdis {
+
+  font-size: 15px;
+  color: rgb(42, 41, 41);
+}
+
+.sprice {
+  font-weight: 800;
+  color: rgb(53, 49, 49);
+}
+
+.simage {
+  height: 200px;
+  width: 250px
+}
+#mainoutdiv{
+  display: flex;
+}
+
+#corner{
+  display: flex;
+  gap: 0px;
+  background-color: rgb(196, 218, 222);
+  border-radius: 10px;
+ 
+}
+#forgrid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  margin-left: 0px;
+  margin-right: 0px;
+  /* background-color: rgb(232, 247, 250); */
+  width: 80%;
+}
+.disofpro{
+font-size: 15px;
+color: rgb(11, 63, 182);
+margin-left: 0px;
+}
+#bigimg>img{
+width: 100%;
+height: 90%;
+
+}
+#bigimg{
+margin-right: 12px;
+margin-bottom: 0px;
+}
+#forgrid>div>h4{
+margin-top: 0px;
+margin-bottom: 0%;
+
+}
+.outertags{
+font-size:19px;
+color: rgb(19, 18, 18);
+margin-top: 0%;
+}
+.x-out{
+  margin-left: 0px;
+  margin-right: 0px;
+  gap: 0px;
+ 
+
+}
+#corner>div>img{
+  width: 80%;
+}
+
+#Showdata2{
+  margin: auto;
+  display: grid;
+  height: 430px;
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: auto;
+  
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  position: relative;
+  width: 96%;
+  overflow-y: hidden;
+}
+#Showdata2>div{
+  height: 500px;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 10px;
+
+}#outerdiv2{
+  overflow: hidden;
+}
+#Showdata2::-webkit-scrollbar{
+display: none;
+}
+.off{
+  background-color: red;
+  width: 90px;
+  border-radius: 9px;
+  color: antiquewhite;
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 2%;
+  background-color: none;
+  
+}
+.discri{
+  font-size: 18px;
+  font-weight: 400; 
+  margin-top: 0%;
+  margin-bottom: 0%;
+
+}
+.priced{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.star{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.pre2:hover{
+  background-color: black;
+  color: aliceblue;
+}
+.fwd2:hover{
+  background-color: black;
+  color: aliceblue;
+}
+.pre2:hover{
+  background-color: black;
+  color: aliceblue;
+}
+.fwd2:hover{
+  background-color: black;
+  color: aliceblue;
+}
+.fwd2{
+  background-color: none;
+  position: absolute;
+  right: 10px;
+  bottom: -1750px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
+.pre2{
+  position: absolute;
+  bottom: -1750px;
+  background-color: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;      
+}
+.mySlidess {display: none;} 
+
+
+/* Slideshow container */
+.slideshow-containers {
+  max-width: 1200px;
+  /* position: relative; */
+  margin: auto;
+  margin-bottom: -50px;
+  
+}
+
+
+/* Caption text */
+ /* .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}  */
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}  */
+
+/* The dots/bullets/indicators */
+.dots {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.1s ease; 
+  margin-top: -200px;
+  
+}
+
+.active {
+  background-color: #234eeb;
+}
+
+/* Fading animation */
+.fades {
+  animation-name: fade;
+  animation-duration: 0.1s;
+}
+
+@keyframes fades {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.con-1,.con-2,.con-3{
+  display: flex;
+  height: 350px;
+  margin-left: 12px;
+  gap: 12px;
+  /* border: 2px solid brown; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.out-1{
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+}
+.imgp1{
+    width: 100%;
+    height: 170px;
+
+}
+.off1{
+  margin-top: 0%;
+  margin-bottom: 0%;
+  background-color: red;
+  width: 70px;
+  text-align: center;
+  border-radius: 5px;
+}
+.discri1{
+  font-size: 15px;
+  
+}
+.priced1{
+  font-size: large;
+  font-weight: 800;
+}
+#Showdata3{
+  display: grid;
+  height: 200px;
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: auto;
+  margin-top: 50px;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  position: relative;
+ 
+}
+#Showdata3>div{
+  height: 180px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  text-align: center;
+  margin-top: 12px;
+  border-radius: 12px;
+
+}#outerdiv3{
+  overflow: hidden;
+}
+#Showdata3::-webkit-scrollbar{
+display: none;
+}
+.fwd3{
+  background-color: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none; 
+  position: absolute;
+  right: 45px;
+  top: 4050px;
+  
+ 
+}
+.pre3{
+  background-color: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none; 
+  position: absolute;
+  left: 45px;
+  top: 4050px;
+  
+}
+.imgslide{
+  width: 200px;
+  height: 180px;
+}
+.pre3:hover{
+  background-color: black;
+  color: white;
+}
+.fwd3:hover{
+  background-color: black;
+  color: white;
+}
+h1{
+  margin-left: 20px;
+  font-size: 35px;
 }
