@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./new.css">
+</head>
+<body>
+    <div id="banner">  <h1>New Arrivals</h1></div>
+  
+
+    <div id="parts">
+        <div id="cat">
+            
+<div>
+    All Categories
+   
+</div>
+<div>
+    <p>Smart Home & Garden</p>
+    <p> &#709</p>
+</div>
+<div>
+    <p>Consumer Electronic</p>
+    <p>&#709</p>
+</div>
+<div>
+    <p>Sports & Outdoors</p>
+    <p>&#709</p>
+</div>
+<div>
+    <p>Toys & Hobbies</p>
+    <p>&#709</p>
+</div>
+<div>
+    <p>Automobiles & Motorcycles</p>
+    <p>&#709</p>
+
+</div>
+<div>
+    <p>Wearables Devices</p>
+    <p>&#709</p>
+</div>
+<div>
+    <p>TV Boxes & Mini PCs</p>
+    <p>&#709</p>
+</div>
+<div>
+    <p>Security Systems</p>
+    <p>&#709</p>
+</div>
+<div>
+    <p>Phones & Accessories</p>
+    <p>&#709</p>
+</div>
+<div>
+    <p>Computers,Tablets & Accessories</p>
+    <p>&#709</p>
+</div>
+            
+        </div>
+        <div id="side_box">
+            <div id="filter">
+                <div id="new_arrived">
+<p class="space">New Arrived :</p>
+<p onclick="seven()">7 Days</p>
+<p onclick="fifth()">15 Days</p>
+<p onclick="third()">30 Days</p>
+                </div>
+
+                <div id="filter_ship">
+
+<p class="space">Filter :</p>
+<select name="" id="ship">
+<option >Ship From</option>
+<option value="Europe">Europe</option>
+<option value="Poland">Poland</option>
+<option value="Germany">Germany</option>
+<option value="Spain">Spain/</option>
+<option value="US">United States</option>
+<option value="UK">United Kingdom</option>
+<option value="Netharland">Netharland</option>
+<option value="China">China</option>
+<option value="Canada">Canada</option>
+<option value="Japan">Japan</option>
+<option value="Australia">Australia</option>
+</select>
+<div id="on_sale">
+    <input type="checkbox">
+    <label for="">On Sale</label>
+</div>
+<div id="free_shiping">
+    <input type="checkbox">
+    <label id="free" for="">Free shipping only</label>
+</div>
+<div id="price_range">
+    <p class="space" id="price">Price : </p>
+    <input id="Min"  type="number" placeholder="Min">
+    <p>-</p>
+    <input id="Max" type="number" placeholder="Max">
+    <p onclick="Ramdev()" id="ok">OK</p>
+</div>
+                </div>
+                <div id="sort_by"> 
+                    
+                    <p class="space">Sort By :</p>
+                    <p onclick="seven()">Best Match</p>
+                    <p onclick="third()">New Arrival</p>
+                    <p id="pricd">
+                     <p1 id="sprice"> Price</p1>
+                     
+                    <p1 id="sortt">
+                        <i onclick="sortLtH()">&#9650</i>
+                    <i onclick="sortHtL()">&#9660;</i>
+                    </p1>
+                    </p>
+                </div>
+            </div>
+            <div id="container"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./new.js"></script>

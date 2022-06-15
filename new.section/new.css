@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #F2F2F2;
+}
+#banner{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #FFFFFF;
+   justify-content: center;
+   align-items: center;
+
+ 
+   line-height: 148px;
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+   display: block;
+   margin: 0 auto;
+}
+#parts{
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    justify-content: space-between;
+   
+}
+#cat{
+    background-color: #FFFFFF;
+    height: 350px;
+    width: 20%;
+}
+#side_box{
+   
+    width: 78%;
+    
+}
+#filter{
+   
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+}
+#container{
+background-color: #F2F2F2;
+  
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+  
+}
+
+#images{
+    height: 60%;
+    width: 100%;
+}
+#new_arrived{
+    display: flex;
+    
+    margin-right: 55%;
+    align-items: center;
+}
+#new_arrived>p{
+    border: 1px solid black;
+    height: 30px;
+    width: 60px;
+    padding: 1px 5px 0px 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+#new_arrived>p:nth-child(1){
+    border: 0px;
+    height: 30px;
+    width: 150px;
+   margin-left: -16px;
+ 
+}
+#new_arrived>p:nth-child(2){
+    margin-left: -50px;
+}
+#filter_ship{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#filter_ship>#ship{
+    height: 30px;
+    width: 23%;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+#price_range{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+margin-right: 40px;
+}
+#price_range>input{
+    width: 60px;
+    height: 25px;
+margin-left: 10px;
+margin-right: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
+#ok{
+border: 1px solid black;
+width: 60px;
+height: 25px;
+display: flex;
+place-items: center;
+justify-content: center;
+background-color: blue;
+color: white;
+border-radius: 5px;
+}
+
+#price{
+    margin-right: -4px;
+}
+#sort_by{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 55%;
+    align-items: center;
+}
+#sort_by>p{
+    border: 1px solid black;
+    padding: 5px  10px 5px 10px;
+    border-radius: 5px;
+}
+#sort_by>p:nth-child(2):hover{
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+#sort_by>p:nth-child(3):hover{
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+#sort_by>p:nth-child(1){
+    border: 0px;
+    padding: 0px;
+    
+}
+#sort_by>p:nth-child(2){
+    margin-left: -5px;
+}
+.space{
+    margin-left: 20px;
+    margin: 20px;
+}
+#free_shiping{
+    margin-right: -20px;
+}
+#boxp{
+    display: flex;
+    justify-content: space-between;
+   
+}
+#details{
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+    margin-top: 12px;
+    display: block;
+    overflow: hidden
+}
+#striked{
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: line-through;
+    display: inline-block;
+    color: #999;
+}
+.p1{
+    font-size: 14px;
+    color: #666;
+   
+}
+#box{
+    padding: 10px 10px 10px 10px;
+    height: 320px;
+    background-color: #FFFFFF;
+}
+#box:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#price{
+    
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    display: block;
+    color: #333
+}
+
+#cat>div{
+display: flex;
+justify-content: space-between;
+padding: 0px 10px 0px 10px;
+}
+#cat>div>p:nth-child(1){
+    display: inline-block;
+    height: 28px;
+    width: 90%;
+    color: #333;
+    font-size: 14px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#cat>div:nth-child(1){
+    display: block;
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 10px;
+}
+#sortt{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+}
+#pricd{
+    
+    display: flex;
+
+}
+#pricd:hover{
+    border: 1px solid blue;
+}
+#sortt>i:hover{
+    color: blue;
+    
+}
+#sprice{
+    margin-top: 6px;
+}
