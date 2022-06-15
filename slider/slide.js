@@ -1,9 +1,14 @@
 let display5 = (data,con) => {
     data.forEach(function (el) {
       var div = document.createElement("div")
+      div.addEventListener("click",function(){
+        datainlocal(el)
+      })
       var img = document.createElement("img")
       img.setAttribute("class", "imgp1")
       img.src = el.image
+  
+  
   
       var h5 = document.createElement("h5")
       h5.innerText = el.off
@@ -26,4 +31,11 @@ let display5 = (data,con) => {
   
   }
   
+
+
+  let datainlocal = (el)=>{
+    localStorage.setItem("item",JSON.stringify(el))
+    window.location.href="../showdetaileddata/showdata.html"
+  }
   export {display5} 
+
