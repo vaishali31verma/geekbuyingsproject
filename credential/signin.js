@@ -7,6 +7,7 @@ function submit(){
     
     if(data.email===email1 && data.password===password1){
         alert("Sigin succesfully")
+        window.location.href="../index.html"
     }
     else{
         let alert1=document.getElementById("alert")
