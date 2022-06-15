@@ -115,7 +115,6 @@
         #first_dropdwn_mainn{
             width: 95%;
             text-align: center;
-           
         }
         
         #top_navbar_second{
@@ -136,10 +135,15 @@
             width: 50%;
             background-color: white;
             border-radius: 7px;
-        }#top_navbar_second_address{
+        }
+        #top_navbar_second_address{
             width: 9%;
             border: 1px solid transparent;
             margin-left: 2%;
+            /* position: relative; */
+        }
+        #top_navbar_second_address:hover #shipToBox{
+            display: block;
         }
         #top_navbar_second_user{
             width: 9%;
@@ -203,9 +207,9 @@
         #top_navbar_last>div{
              margin-left: 45px;
         }
-        /* #top_category{
-            position: relative;
-        } */
+        #top_category{
+            position: absolute;
+        }
         
         #drop_category{
             display: none;
@@ -213,10 +217,14 @@
             color: gray;
             width: 160px;
             top: 150px;
-            position: absolute;
+            /* position: absolute; */
         }
         #drop_category>p{
             margin-top: 10px;
+            padding-left: 5px;
+        }
+        #drop_category>p:nth-child(1){
+            margin-top: 15px;
         }
         #top_category:hover{
             /* position: fixed; */
@@ -233,7 +241,77 @@
             display: flex;
            justify-content:space-between;
         }
-        
+        #all_options_categories>div{
+            margin-left: 50px;
+        }
+        #all_options_categories>div:nth-child(1){
+            margin-left: 120px;
+        }
+        #shipToBox{
+            width: 280px;
+            height: 180px;
+            
+            padding-top: 10px;
+            padding-left: 35px;
+            
+            /* position: absolute; */
+            display: none;
+            
+            /* background-color: white; */
+        }
+        #test{
+            border-radius: 8px;
+            position: absolute;
+            left: 700px;
+            top: 100px;
+            background-color: white;
+            color: black;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #shipToBox>p:nth-child(2){
+            font-size: 13.5px;
+            margin-top: 5px;
+            margin-bottom: -5px;
+            color: black;
+        }
+        #shipToBox>select:nth-child(3){
+            height: 30px;
+            width: 200px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: gray;
+        }
+        #shipToBox>select:nth-child(5){
+            height: 30px;
+            width: 200px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: gray;
+        }
+        #shipToBox>p:nth-child(4){
+            font-size: 14px;
+            margin-top: 10px;
+            
+        }
+        #shipToBox>:nth-last-child(1){
+            display: block;
+            padding:4px 25px;
+            margin-left: 55px;
+            margin-top: 5px;
+            font-size: 15px;
+            background-color: rgb(20,118,254);
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+        #shipToBox>:nth-last-child(1):hover{
+            cursor: pointer;
+        }
+        .country_select{
+            text-align: center;
+        }
   </style>
   <body>
     
@@ -308,7 +386,40 @@
                 <p>Ship to</p>
                 <div>
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="">
-                <p>/ INR </p></div>
+                <p>/ INR </p>
+                <div id="test">
+                <div id="shipToBox">
+                    <h5>Select Regional settings</h5>
+                    <p>Ship to</p>
+                    <select name="" class="country_select">
+                        <option value="">India</option>
+                        <option value="">China</option>
+                        <option value="">USA</option>
+                        <option value="">China</option>
+                        <option value="">Thailand</option>
+                        <option value="">Japan</option>
+                        <option value="">Malaysia</option>
+                        <option value="">Vietnam</option>
+                        <option value="">South Korea</option>
+                        <option value="">Singapore</option>
+                    </select>
+                    <p>Currency</p>
+                    <select name="" class="country_select">
+                        <option value="">INR ₹</option>
+                        <option value="">USD $</option>
+                        <option value="">EUR €</option>
+                        <option value="">JPY ¥</option>
+                        <option value="">NZD NZ$</option>
+                        <option value="">CHF CHF</option>
+                        <option value="">HUF Ft</option>
+                        <option value="">PHP ₱</option>
+                        <option value="">UAH ₴</option>
+                    </select>
+                    <button>Save</button>
+                    </div>
+                </div>
+                
+            </div>
             </div>
             <div id="top_navbar_second_user">
                 <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1510/ylivdesign151000120/46153782-profile-icon-white-simple-image-isolated-on-blue-background.jpg?ver=6" alt="">
@@ -342,13 +453,12 @@
             <div>Clearance</div>
             <div>Deals</div>
             <div>Coupons</div>
-            <div>App only</div>
+            <div>App</div>
         </div>
     </div>
    </div>
 </div>
    
-
 
 
 
