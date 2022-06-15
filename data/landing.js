@@ -1094,3 +1094,37 @@ var container5 = [
               ];
 
               localStorage.setItem("container8",JSON.stringify(container8));
+
+              console.log(container5)
+              let pooja=document.querySelector("#app");
+         let newfunction=(newArriva)=>{
+         newArriva.forEach((ele) => {
+        let re=document.createElement("div");
+
+        let one=document.createElement("img");
+        one.setAttribute("src",ele.image);
+
+        let two=document.createElement("h2");
+        two.innerText=ele.name;
+        
+        let three=document.createElement("h2");
+        three.setAttribute("src",ele.name_url);
+
+        let fuou=document.createElement("h2");
+        fuou.innerText=ele.price;
+
+        let five=document.createElement("h2");
+        five.innerText=ele.strikePrice;
+        re.append(one,two,three,fuou,five);
+        pooja.append(re);
+    });
+  }
+  newfunction(container5)
+  newfunction(container3)
+  newfunction(container4)
+  newfunction(container6)
+  newfunction(container7)
+  newfunction(container8)
+  newfunction(page1)
+  newfunction(page2)
+  newfunction(container5)

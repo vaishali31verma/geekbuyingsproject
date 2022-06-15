@@ -355,3 +355,30 @@ let topSellers = [
   ];
   
   localStorage.setItem("topSellers", JSON.stringify(topSellers));
+
+  console.log(topSellers)
+
+  let pooja=document.querySelector("#appp");
+  let newfunction=(newArriva)=>{
+    newArriva.forEach((ele) => {
+        let re=document.createElement("div");
+
+        let one=document.createElement("img");
+        one.setAttribute("src",ele.image);
+
+        let two=document.createElement("h2");
+        two.innerText=ele.name;
+        
+        let three=document.createElement("h2");
+        three.setAttribute("src",ele.name_url);
+
+        let fuou=document.createElement("h2");
+        fuou.innerText=ele.price;
+
+        let five=document.createElement("h2");
+        five.innerText=ele.strikePrice;
+        re.append(one,two,three,fuou,five);
+        pooja.append(re);
+    });
+  }
+  newfunction(topSellers)
