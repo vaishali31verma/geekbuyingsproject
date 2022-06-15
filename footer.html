@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        #footer_div_first{
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #footer_div_first>div{
+            /* /* text-align: center; */
+            color: rgb(20,118,254);
+           margin-top: 23px;
+           font-weight: 600;
+            /* border: 1px solid transparent ; */ 
+        }
+        #below_footer_div_first{
+            border: 1px solid transparent;
+            height: 150px;
+            width: 75%;
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+          
+        }
+        #below_footer_div_first>div{
+            width: 25%;
+            border: 1px solid transparent;
+            text-align: center;
+          
+        }
+        #below_footer_div_first>div>img{
+            width: 20%;
+            height: 30%;
+        }
+        #below_footer_div_first>div>p:nth-child(2){
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 7px;
+            margin-top: 3px;
+        }
+        #below_footer_div_first>div>p:nth-child(3){
+            font-size: 13px;
+            padding: 1px 33px;
+            color: gray;
+            line-height: 16px;
+        }
+        #footer_div_second{
+            margin-top: 30px;
+            text-align: center;
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+          
+            border-top: 1px solid rgb(227, 209, 209);
+            border-bottom: 1px solid rgb(227, 209, 209);
+        }
+        #footer_div_second>input{
+           border: 2px solid rgb(20,118,254);
+            width: 550px;
+            height: 45px;
+        }
+        #footer_div_second>button{
+            padding: 15px 15px ;
+            margin-right: 20px;
+            color: white;
+            background-color: rgb(20,118,254);
+            border: none;
+            border-radius: 1px;
+        }
+        #footer_div{
+            background-color:rgb(241,246,253);
+        }
+        #footer_div_third_main{
+            width: 80%;
+            height: 220px;
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+        }
+        #footer_div_third_main>div:nth-child(1){
+            width: 17%;
+        }
+        #footer_div_third_main>div:nth-child(2){
+            width: 17%;
+        }
+        #footer_div_third_main>div:nth-child(3){
+            width: 17%;
+        }
+        #footer_div_third_main>div{
+            width: 20%;
+            height: 200px;
+            border: 1px solid transparent;
+            line-height: 21px;
+        }
+        #footer_div_third_main>div:nth-child(4){
+            width: 23%;
+        }
+        #footer_div_third_main>div>p{
+                 font-size: 13px;
+                 letter-spacing: 1px; 
+                 color: rgb(69, 66, 66);
+        }
+        #footer_div_third_main>div>p:nth-child(1){
+            cursor: pointer;
+        }
+        #footer_div_third_main>div>p:nth-child(1){
+            font-weight: 800;
+        }
+        #qr_code_div{
+            display: flex;
+        }
+        #second_qr_code_div>img{
+          display: block;
+          margin-top: 6px;
+          margin-left: 7px;
+        }
+        #connect_div{
+            display: flex;
+            width: 250px;
+            border: 1px solid transparent;
+            height: 30px;
+            justify-content: space-evenly;
+        }
+        #connect_div>div>a>img{
+            height: 120%;
+            margin-right: 10px;
+        }
+        #connect_div>div>img:hover{
+            cursor: pointer;
+        }
+        #customer_support>div:nth-child(1){
+            margin-top: 30px;
+        }
+        #customer_support>div{
+            display: flex;
+            padding-left: 25px;
+        }
+        #customer_support>div>div>img{
+            width: 23px;
+            margin-right: 10px;
+        }
+        #customer_support>div>div{
+            font-size: 15px;
+            color: rgb(71, 69, 69);
+        }
+        #customer_support>div>div:hover{
+            cursor: pointer;
+            color: black;
+        }
+        #footer_div_fourth{
+            padding-left: 100px;
+            margin-top: 20px;
+            
+        }
+        #footer_div_fourth>p:nth-child(1){
+            margin-bottom: 12px;
+            padding-left: 15px;
+        }
+        #footer_div_fourth>div:nth-child(2){
+            display: flex;
+            margin-left: 10px;
+        }
+        #footer_div_fourth>div:nth-child(2)>div{
+            background-color: white;
+            color: gray;
+            margin-left: 12px;
+            padding: 5px;
+            border-radius: 4px;
+            font-size: 13.5px;
+        }
+        #footer_div_fourth>div:nth-child(2)>div:hover{
+            cursor: pointer;
+            color: black;
+        }
+        #language_div{
+            height: 50px;
+            margin-top: 40px;
+            /* border: 1px solid red; */
+            display: flex;
+            padding-left: 150px;
+        }
+        #language_div>p{
+            margin-right: 14px;
+            border-right: 1px solid gray;
+            height: 20px;
+            padding-right: 7px;
+            font-size: 14px;
+            color: grey;
+        }
+        #last_div{
+            padding-left: 90px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id="footer_div">
+        <div id="footer_div_first">
+            <div>Why buy from geekbuying?</div>
+        </div>
+        <div id="below_footer_div_first">
+            <div>
+                <img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/undefined/external-offer-business-and-finance-icongeek26-linear-colour-icongeek26.png"/>
+                <p>Amazing offers</p>
+                <p>Find best offers for smart gadgets at one place.</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/undefined/external-wallet-ecommerce-justicon-flat-justicon.png"/>
+                <p>Easy & secure payments</p>
+                <p>Pay directly via PayPal or Klarna among other payment options.</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/fluency/48/undefined/truck.png"/>
+                <p>Local stock & fast shipping</p>
+                <p>Buy from local stock and ship within 48-hour.</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/dusk/64/undefined/customer-support.png"/>
+                <p>Customer support</p>
+                <p>24-hour customer support for all your queries.</p>
+            </div>
+        </div>
+        <div id="footer_div_second">
+            <input type="text" placeholder="Enter email to get a 5% off coupon">
+            <button>Subscribe</button>
+        </div>
+        <div id="footer_div_third">
+            <div id="footer_div_third_main">
+                <div>
+                    <p>Help</p>
+                    <p>Order status</p>
+                    <p>About us</p>
+                    <p>Contact us</p>
+                    <p>Warranty</p>
+                    <p>FAQs</p>
+                    <p>Siteup</p>
+                </div>
+                <div>
+                    <p>Support</p>
+                    <p>Payment Information</p>
+                    <p>Shopping Guide</p>
+                    <p>Contact us</p>
+                    <p>Wholesale</p>
+                    <p>Drop shipping</p>
+                    <p>Blog</p>
+                    <p>Affiliates</p>
+                </div>
+                <div>
+                    <p>Policies</p>
+                    <p>Terms & Conditions</p>
+                    <p>Return Policies</p>
+                    <p>Privacy</p>
+                    <p>Declaration</p>
+                    <p>Customs</p>
+                </div>
+                <div>
+                    <p>Download the App</p>
+                  <div id="qr_code_div">
+                    <div>
+                       <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/android_app.png" alt="">
+                    </div>
+                  <div id="second_qr_code_div">
+                       <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/app_store.jpg" alt="">
+                       <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/google_play.jpg" alt="">
+                       <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/gallery.jpg" alt="">
+                  </div>
+                  </div>
+                  <p>Connect with us</p>
+                  <div id="connect_div">
+                    <div>
+                      <a href="https://www.facebook.com/Geekbuyingfans" target="_blank"><img src="https://img.icons8.com/stickers/100/undefined/facebook-f.png"/></a>  
+                    </div>
+                    <div>
+                       <a href="https://www.youtube.com/user/geekbuying" target="_blank"><img src="https://img.icons8.com/color/48/undefined/youtube-play.png"/></a> 
+                    </div>
+                    <div>
+                       <a href="https://t.me/GeekbuyingOfficialOnlineStore" target="_blank"><img src="https://img.icons8.com/fluency/48/undefined/filled-sent.png"/></a> 
+                    </div>
+                    <div>
+                       <a href="https://www.instagram.com/geek.buying/" target="_blank"> <img src="https://img.icons8.com/fluency/48/undefined/instagram-new.png"/></a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/geekbuying" target="_blank"><img src="https://img.icons8.com/color/48/undefined/twitter--v1.png"/></a>
+                    </div>
+                    <div>
+                       <a href="https://www.tiktok.com/@geekbuying_uk" target="_blank"> <img src="https://img.icons8.com/glyph-neue/64/undefined/tiktok.png"/></a>
+                    </div>
+                  </div>
+                </div>
+                <div id="customer_support">
+                    <div>
+                        <div>
+                            <img src="https://img.icons8.com/fluency/48/undefined/mail.png"/>
+                        </div>
+                        <div>
+                            Service_payment@geekbuying.com
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://img.icons8.com/fluency/48/undefined/train-ticket.png"/>
+                        </div>
+                        <div>
+                            Ticket
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/undefined/external-customer-support-female-profession-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"/>
+                        </div>
+                        <div>
+                            Live chat
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="footer_div_fourth">
+            <p>Popular Searches</p>
+            <div>
+                <div>Geekbuying coupon</div>
+                <div>Roborock Q7 Max</div>
+                <div>Tronsmart Bluetooth Speakers</div>
+                <div> Windows Mini PC</div>
+                <div>ENGWE X26</div>
+                <div>andriod tv boxes</div>
+                <div>LDS Robot Vacuum</div>
+                <div>Electric Bike</div>
+               <div>Redmi mobile</div>
+            </div>
+        </div>
+        <div id="language_div"> 
+            <p> English</p>
+            <p>Español</p>
+            <p>Français</p>
+            <p> Deutsch</p>
+            <p> Italiano</p>
+            <p>Português</p>
+            <p>Nederlands</p>
+            <p>Polski</p>
+            <p>Русский</p>
+            <p>Türkçe</p>
+            <p>ελληνικά</p>
+            <p>Magyar</p>
+            <p> עברית</p>
+            <p>لعربي</p>
+            <p>ไทย</p>
+            <p>日本語</p>
+        </div>
+    </div>
+    <div id="last_div">
+        <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/foot_icon.png" alt="">
+    </div>
+
+   
+</body>
+</html>
+<script>
+   
+</script>
