@@ -329,6 +329,7 @@ box.addEventListener("click",function(){
 
 function catch1(elem){
     localStorage.setItem("item",JSON.stringify(elem))
+    window.location.href='../showdetaileddata/showdata.html'
 }
 
 function seven() {
