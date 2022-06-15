@@ -140,7 +140,7 @@ let display1 = (data1) => {
 }
 display1(data1)
 let datainlocal = (el)=>{
-   localStorage.setItem("product",JSON.stringify(el))
+   localStorage.setItem("item",JSON.stringify(el))
  }
 
 var data2 = [{
