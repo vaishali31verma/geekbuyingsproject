@@ -1,6 +1,9 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+import {navbar} from "./navbar/navbar.js"
+document.getElementById("top-navbar").innerHTML = navbar()
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
