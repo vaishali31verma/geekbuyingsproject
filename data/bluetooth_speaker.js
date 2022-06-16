@@ -62,6 +62,7 @@ three.setAttribute("class","linetrough");
 
 let four=document.createElement("h2");
 four.innerText= "₹" + ele.discount;
+four.setAttribute("class","colg");
 
 let five=document.createElement("p");
 five.innerText=ele.star;

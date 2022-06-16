@@ -8,6 +8,7 @@ const getData = async ( url )=>{
         data = data.Bluetooth_speaker ;
         console.log("data", data);
         
+        let htol=document.getElementById("")
         return data;
         
 
@@ -29,9 +30,25 @@ const appendData = (data, main)=>{
         let detail1 = document.createElement("p");
         detail1.innerText = ele.detail;
 
+        let price = document.createElement("p");
+        price.innerText ="₹"+ele.original;
         
+        
+        let beforePrice=document.createElement("p");
+        beforePrice.innerText="₹"+ele.before;
+        beforePrice.setAttribute("class","linetrough");
+        console.log("ele.before",ele.before);
 
-        div.append(image1,detail1);
+        let discon=document.createElement("p");
+        discon.innerText="₹"+ele.discount;
+        discon.setAttribute("class","discounted");
+
+        let starrr=document.createElement("p");
+        starrr.innerText=ele.star;
+
+
+
+        div.append(image1,detail1,price,beforePrice,discon,starrr);
 
         main.append(div);
     })
