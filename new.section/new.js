@@ -63,7 +63,7 @@ product = [
     days: 7,
   },
   {
-    image: "https://img.gkbcdn.com/s3/l/label/Label1.png?version=20220609",
+    image: "https://img.gkbcdn.com/p/2022-05-25/LEMFO-LF31-Smartwatch-BT-Calling-Watch-Black-Steel-501273-0._w280_p1_.jpg",
     detail: "360 Degree Rotatable 1080p HD Camera, WiFi Wireless",
     original: 3445,
     before: 4556,
@@ -289,6 +289,7 @@ function display(data) {
   data.forEach(function (elem) {
     var box = document.createElement("div");
     box.id = "box";
+   
   
     var avatar = document.createElement("img");
     avatar.id = "images";
@@ -321,6 +322,7 @@ function display(data) {
 
 box.addEventListener("click",function(){
     catch1(elem)
+
 })
     
   });
@@ -329,7 +331,8 @@ box.addEventListener("click",function(){
 
 function catch1(elem){
     localStorage.setItem("item",JSON.stringify(elem))
-}
+    window.location.href = "../showdetaileddata/showdata.html"
+} 
 
 function seven() {
   let data = JSON.parse(localStorage.getItem("product"));
