@@ -1119,12 +1119,12 @@ var container5 = [
         pooja.append(re);
     });
   }
-  newfunction(container5)
-  newfunction(container3)
-  newfunction(container4)
-  newfunction(container6)
-  newfunction(container7)
-  newfunction(container8)
-  newfunction(page1)
-  newfunction(page2)
-  newfunction(container5)
+  // newfunction(container5)
+  // newfunction(container3)
+  // newfunction(container4)
+  // newfunction(container6)
+  // newfunction(container7)
+  // newfunction(container8)
+  // newfunction(page1)
+  // newfunction(page2)
+  
