@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+             'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #header{
+            border: 1px solid red;
+            width: 100%;
+            margin: auto;
+            height: 200px;
+        }
+
+        #main{
+            width: 98%;
+            height: 500px;
+            margin: auto;
+            padding: 5px;
+           justify-content: space-between;
+            display: flex;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, */
+             /* rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+             border: 1px solid gray;
+             border-radius: 7px;
+        }
+
+        #option{
+            width: 25%;
+            background-color: rgb(247, 227, 202);
+            padding: 10px;
+        }
+
+        #card{
+            width: 38%;
+            padding: 10px;
+        }
+
+        #summary{
+            width: 33%;
+            padding: 10px;
+        }
+
+       #btn{
+           width: 130px;
+           height: 40px;
+           margin-top: 20px;
+           margin-left: 190px;
+         background: #06f;
+         color: aliceblue;
+         border: 0px;
+         cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+       }
+       
+       #summary1{
+           height: auto;
+           text-align: center;
+           margin: auto;
+           background-color: #06f;
+           color: aliceblue;
+       }
+
+       #miniBox{
+           height: 30%;
+           width: 100%;
+           display: flex;
+       }
+
+       #mini1{
+           height:40%;
+           width: 50%;
+           /* border: 1px solid blue; */
+       }
+       #mini2{
+           height: 40%;
+           width: 50%;
+           text-align: right;
+           /* border: 1px solid blue; */
+       }
+
+       u{
+           color: rgb(63, 63, 243);
+       }
+
+       #total{
+          display: flex;
+          justify-content: space-between;
+       }
+       h2>i,h2>svg{
+           margin-right: 10px;
+       }
+       h2>img{
+            margin-bottom: -10px;
+            margin-left: -5px;
+       }
+
+       #last{
+       
+        margin-top: 170px;
+       }
+
+       #last>img{
+        width: 100%;
+       }
+       
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div><h1>Payment Gateway</h1></div>
+    <div id="main">
+        <div id="option">
+
+<h2><i class='fas fa-wallet'></i>Wallet</h2>
+<h2><img src="https://img.icons8.com/fluency/40/000000/bhim.png"/>UPI</h2>
+<h2><i style="font-size:24px" class="fa">&#xf09d;</i>Cards</h2>
+<h2><i style="font-size:24px" class="fa">&#xf19c;</i>Net Banking</h2>
+<h2><svg xmlns="http://www.w3.org/2000/svg" width="29" height="26" fill="currentColor" class="bi bi-cash" viewBox="0 0 18 11">
+    <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+    <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+  </svg>Pay On Delivery</h2>
+
+        </div>
+
+        <div id="card">
+            <h3>Credit & Debit Cards</h3>
+            <p>Add new cards for payment</p>
+           <p> Card Number</p>
+           <input type="number" placeholder="Enter Card Number">
+           <p>Expiry Date</p>
+           <input type="date">
+           <p>CVV</p>
+           <input type="number" placeholder="Enter CVV">
+           
+           
+           <p>Your card details will be saved securely for future transactions, based on the industry standards. <u>Terms & condition</u></p>
+
+           <button id="btn">Make Payment</button>
+           
+        </div>
+
+        <div id="summary">
+            <div id="summary1"><h2>Payment Summary</h2></div>
+            <div id="miniBox">
+                <div id="mini1">
+                    <p>Amount</p>
+                    <p>Card Offer</p>
+                </div>
+                <div id="mini2">
+                    <p>0</p>
+                    <p>-1500</p>
+                </div>
+                
+            </div>
+                <hr>
+           <div id="total">
+
+            <p >Total Amount</p>
+            <p>0</p>
+
+           </div>
+           <hr>
+            
+        </div>
+    </div>
+
+    <div id="last"> <img src="https://content1.geekbuying.com/V1.4/en/images/shopcart_footicon.png" alt=""></div>
+</body>
+</html>
+<script>
+    let total =localStorage.getItem("total");
+
+    total= Number(total);
+
+    document.querySelector("#mini2>p:nth-Child(1)").innerText=total;
+   
+let amt=document.querySelector("#mini2>p:nth-Child(2)").innerText;
+
+amt=Number(amt);
+
+let finalAmt=total+amt;
+
+document.querySelector("#total>p:nth-Child(2)").innerText=finalAmt;
+
+document.querySelector("#btn").addEventListener("click",orderplaced);
+function orderplaced(){
+    window.location.href="/confirmation.html";
+}
+</script>
