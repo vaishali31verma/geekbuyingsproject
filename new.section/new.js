@@ -1,4 +1,8 @@
-product = [
+import {navbar,footer} from "../navbar/navbar.js"
+document.getElementById("top-navbar").innerHTML=navbar()
+document.getElementById("footer").innerHTML = footer()
+
+let product = [
   {
     image:
       "https://img.gkbcdn.com/p/2022-05-30/SCULPFUN-30L-Min-Air-Pump-Compressor-EU-Plug-501434-0._w280_p1_.jpg",
@@ -279,6 +283,10 @@ product = [
     days: 10,
   },
 ];
+
+
+
+
 display(product);
 localStorage.setItem("product", JSON.stringify(product));
 

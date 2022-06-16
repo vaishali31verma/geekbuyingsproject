@@ -24,7 +24,7 @@ width: 150px;
 #pic>div{
     margin: auto;
 }
-h1{
+.h1{
 
     display: block;
     margin: auto;
@@ -34,7 +34,7 @@ h1{
     align-items: center;
     margin-top: 30px;
 }
-p{
+.p{
     font-size: 30px;
     font-style: normal;
     font-weight: 600;

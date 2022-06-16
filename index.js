@@ -1,8 +1,10 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-import {navbar} from "./navbar/navbar.js"
+import {navbar,footer} from "./navbar/navbar.js"
 document.getElementById("top-navbar").innerHTML = navbar()
+
+document.getElementById("footer").innerHTML = footer()
 
 // Next/previous controls
 function plusSlides(n) {

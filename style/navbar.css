@@ -1,9 +1,13 @@
-*{
+#top-navbar{
     font-family: sans-serif;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-}
+    margin-left: -20px;
+    margin-right: -24px;
+    /* margin-left: -12px; */
+    margin-top: -12px;
+} 
 #second_dropbtn_btn {
 background-color: rgb(20,118,254);
 color: white;
@@ -54,7 +58,7 @@ font-size: 13px;
 
 #second_dropdwn:hover #second_dropbtn_btn {background-color: rgb(20,118,254);;}
 #third_dropdwn:hover #third_dropbtn_btn {background-color: rgb(20,118,254);;}
- #top_navbar{
+ #top-navbar{
     height: 150px;
     background-color: rgb(20,118,254);
     color: white;
@@ -91,6 +95,7 @@ font-size: 13px;
     position: absolute;
    top: 25px;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   z-index: 99;
 }
 #first_dropdwn:hover #first_dropdwn_main{
     display: block;  
@@ -131,6 +136,20 @@ font-size: 13px;
     width: 9%;
     border: 1px solid transparent;
     margin-left: 2%;
+    
+    /* position: relative; */
+}
+
+#top_navbar_second_address>div>p{
+    margin-top: -21px;
+    /* width: 700px; */
+}
+#top_navbar_second_address>div>img{
+    width: 9%;
+    border: 1px solid transparent;
+    margin-left: 2%;
+    border: 2px solid black;
+    height: 20px;
     /* position: relative; */
 }
 #top_navbar_second_address:hover #shipToBox{
@@ -173,11 +192,15 @@ font-size: 13px;
 }
 #top_navbar_second_address>p{
     font-size: 12px;
+
 }
 #top_navbar_second_address>div>img{
     width: 40%;
     margin-right: 8px;
     background-color: green;
+}
+#top_navbar_second_address>div>p{
+  margin-top: -27px;
 }
 #top_navbar_second_address>div{
     display: flex;
@@ -200,6 +223,7 @@ font-size: 13px;
 }
 #top_category{
     position: absolute;
+    z-index: 99;
 }
 
 #drop_category{
@@ -210,7 +234,8 @@ font-size: 13px;
     top: 150px;
     overflow: scroll;
     height: 400px;
-    
+    /* z-index: 99; */
+    /* position: absolute; */
 
     /* position: absolute; */
 }
@@ -248,7 +273,7 @@ font-size: 13px;
 }
 #shipToBox{
     width: 280px;
-    height: 180px;
+    height: 300px;
     
     padding-top: 10px;
     padding-left: 35px;
@@ -310,4 +335,11 @@ font-size: 13px;
 }
 .country_select{
     text-align: center;
+}
+#navbar-top{
+    background-color:   rgb(20,118,254);
+}
+.newxx{
+   color: #ddd;
+   text-decoration: none;
 }

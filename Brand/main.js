@@ -1,5 +1,11 @@
 import {logoimg,giflogo,logopng,logopng2} from "./brand.js"
 
+import {navbar,footer} from "../navbar/navbar.js"
+document.getElementById("top-navbar").innerHTML = navbar()
+
+document.getElementById("footer").innerHTML = footer()
+
+
 
 setTimeout(() => {
     document.getElementById("logos").innerHTML = logoimg()     
