@@ -117,6 +117,7 @@ var headphones = [
   
   let one=document.createElement("img");
   one.setAttribute("src",ele.image);
+  one.style.width="100%";
   
   let onnn=document.createElement("p");
   onnn.innerText=ele.detail;
@@ -135,3 +136,21 @@ var headphones = [
   });
   }
   newfunction(headphones)
+
+
+  function htl() {
+   
+    headphones.sort(function (a, b) {
+      return a.original - b.original;
+    });
+   
+    newfunction(headphones);
+  }
+  function lth() {
+    
+    headphones.sort(function (a, b) {
+      return b.original - a.original;
+    });
+   
+    newfunction(headphones);
+  }

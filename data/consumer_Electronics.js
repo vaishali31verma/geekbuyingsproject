@@ -505,6 +505,7 @@ re.addEventListener("click",function() {
 
 let one=document.createElement("img");
 one.setAttribute("src",ele.image);
+one.style.width="100%";
 
 let two=document.createElement("p");
 two.innerText=ele.detail;

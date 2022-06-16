@@ -270,6 +270,7 @@ let re=document.createElement("div");
 
 let one=document.createElement("img");
 one.setAttribute("src",ele.image);
+one.style.width="100%";
 
 let two=document.createElement("p");
 two.innerText=ele.detail;
@@ -287,3 +288,21 @@ pooja.append(re);
 });
 }
 newfunction(watch)
+
+
+function htl() {
+   
+  watch.sort(function (a, b) {
+    return a.original - b.original;
+  });
+ 
+  newfunction(watch);
+}
+function lth() {
+  
+  watch.sort(function (a, b) {
+    return b.original - a.original;
+  });
+ 
+  newfunction(watch);
+}
