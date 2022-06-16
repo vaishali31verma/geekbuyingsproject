@@ -107,7 +107,7 @@ var headphones = [
    
     
    ]
-  localStorage.setItem("headphones",JSON.stringify(headphones));
+  localStorage.setItem("item",JSON.stringify(headphones));
 
   console.log(headphones)  
   let pooja=document.querySelector("#pgrid");

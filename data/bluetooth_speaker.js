@@ -5,6 +5,7 @@ var Bluetooth_speaker = [
     "url":"https://www.geekbuying.com/deals?id=414905",
     "original":4710.54,
     "before":6280.98,
+    "star": "🌟🌟🌟🌟",
     "discount":"25% OFF"
     },
     {
@@ -12,6 +13,7 @@ var Bluetooth_speaker = [
     "url":"https://www.geekbuying.com/deals?id=419179",
     "original":2590.44,
     "before":3297.14,
+    "star": "🌟🌟🌟🌟🌟",
     "discount":"21% OFF"
     },
     
@@ -20,6 +22,7 @@ var Bluetooth_speaker = [
     "url":"https://www.geekbuying.com/deals?id=388375",
     "original":3454.19,
     "before":5260.20,
+    "star": "🌟🌟🌟🌟",
     "discount":"34% OFF"
     },
     {
@@ -27,17 +30,19 @@ var Bluetooth_speaker = [
         "https://img.gkbcdn.com/p/2017-07-26/xiaomi-wifi-amplifier-pro-black-1574132393616._w280_.jpg",
       "original": 1569.66,
       "before": 2119.31,
+      "star": "🌟🌟🌟🌟🌟",
       "discount": "26% OFF",
     },
     
        
 ];
 
-    localStorage.setItem("Bluetooth_speaker", JSON.stringify(Bluetooth_speaker));
+    localStorage.setItem("item", JSON.stringify(Bluetooth_speaker));
 
-    console.log(Bluetooth_speaker)  
+    // console.log(Bluetooth_speaker)  
 let pooja=document.querySelector("#pgrid");
 let newfunction=(newArriva)=>{
+    pooja.innerHTML=null;
 newArriva.forEach((ele) => {
 let re=document.createElement("div");
 
@@ -53,14 +58,39 @@ two.innerText= "₹" + ele.original;
 
 let three=document.createElement("h2");
 three.innerText= "₹" + ele.before;
+three.setAttribute("class","linetrough");
 
 let four=document.createElement("h2");
 four.innerText= "₹" + ele.discount;
 
+let five=document.createElement("p");
+five.innerText=ele.star;
 
 
-re.append(one,two,three,four);
+
+re.append(one,two,three,four,five);
 pooja.append(re);
 });
 }
-newfunction(Bluetooth_speaker)
+newfunction(Bluetooth_speaker);
+
+
+
+function htl() {
+   
+    Bluetooth_speaker.sort(function (a, b) {
+      return a.original - b.original;
+    });
+   
+    newfunction(Bluetooth_speaker);
+  }
+  function lth() {
+    
+    Bluetooth_speaker.sort(function (a, b) {
+      return b.original - a.original;
+    });
+   
+    newfunction(Bluetooth_speaker);
+  }
+
+  

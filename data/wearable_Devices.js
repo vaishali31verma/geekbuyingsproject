@@ -260,7 +260,7 @@ var watch = [
       },
 
    ];
-localStorage.setItem("watch",JSON.stringify(watch));
+localStorage.setItem("item",JSON.stringify(watch));
 
 console.log(watch)  
 let pooja=document.querySelector("#pgrid");

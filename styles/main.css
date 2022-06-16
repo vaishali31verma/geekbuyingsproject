@@ -1,0 +1,80 @@
+
+#bigboxx{
+    width: 85%;
+    border: 1px solid rgb(232, 27, 27);
+    margin: auto;
+    margin-top: 30px;
+}
+#salepic{
+    height: 120px;
+    width: 80%;
+    border: 1px solid rgb(86, 6, 6);
+    margin: auto;
+}
+#salepic>img{
+    height: 100%;
+    width: 100%;
+}
+#leftcon{
+    height: 630px;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid rgb(72, 193, 61);
+    /* margin-top: 20px; */
+    /* margin-left: 10%; */
+    text-align: justify;
+}
+.slidenxt{
+   margin-left: 25%;
+    margin-bottom: 500px;
+    height: 350px;
+    width: 75%;
+    border: 1px solid rgb(76, 20, 197);
+    margin-top: -600px;
+}
+#forFilter{
+    height: 70px;
+    width: 75%;
+    border: 1px solid rgb(214, 17, 136);
+    margin-left: 25%;
+    margin-top: -470px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#forFilter>div{
+    height: 50px;
+    width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+#forFilter>div>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+#doFilter{
+    height: 130px;
+    width: 75%;
+    border: 1px solid rgb(14, 147, 196);
+    margin-left: 25%;
+    margin-top: 10px;
+}
+#pgrid{
+    width: 100%;
+    border: 1px solid rgb(54, 18, 215);
+    margin-top: 20px;
+   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+#pgrid>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid red;
+   gap:10px;
+}
+.linetrough{
+    text-decoration: line-through;
+    color: red;
+}
