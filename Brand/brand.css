@@ -1,0 +1,60 @@
+#logos,#logoss,#logoss2,#logoss3,#logoss4{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows:repeat(2,1fr);
+    gap: 5px;
+    
+margin: 80px;
+   
+}
+#logos>img,#logoss>img,#logoss2>img,#logoss3>img,#logoss4>img{
+border: 0.5px solid rgb(240, 235, 235);
+height: 75px;
+width: 150px;
+
+}
+#pic{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    
+    height: auto;
+}
+#pic>div{
+    margin: auto;
+}
+.h1{
+
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    align-items: center;
+    margin-top: 30px;
+}
+.p{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 100px;
+    text-decoration: underline;
+    text-underline-position: below;
+    color: rgb(73, 69, 69);
+}
+#pics>img{
+
+width: 100%;
+height: 300px;
+
+}
+
+#picture{  
+    width: 500px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

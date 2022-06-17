@@ -21,7 +21,7 @@
 }
 
 /* Next & previous buttons */
-.prev,
+
 .next {
   cursor: pointer;
   position: absolute;
@@ -36,7 +36,21 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(21, 20, 20);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  left: -597px;
+}
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -229,7 +243,7 @@ h3 {
 
 .pre {
   position: absolute;
-  left: 370px;
+  left: 30px;
   margin-top: 160px;
   border: 0ch;
   width: 30px;
@@ -556,6 +570,14 @@ display: none;
   top: 4050px;
   
 }
+.mySlides{
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  left: -600px;
+  top: -270px;
+  
+}
 .imgslide{
   width: 200px;
   height: 180px;
@@ -572,3 +594,12 @@ h1{
   margin-left: 20px;
   font-size: 35px;
 }
+
+
+
+
+
+
+
+
+

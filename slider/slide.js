@@ -35,7 +35,7 @@ let display5 = (data,con) => {
 
   let datainlocal = (el)=>{
     localStorage.setItem("item",JSON.stringify(el))
-    window.location.href="../showdetaileddata/showdata.html"
+    window.location.href="../geekbuyingsproject/showdetaileddata/showdata.html"
   }
   export {display5} 
 
