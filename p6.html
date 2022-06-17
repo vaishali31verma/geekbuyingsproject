@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="commonstyles.css">
+<body>
+    <div id="navbar"></div>
+    <div id="banner">
+        <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg">
+    </div>
+    <div id="main">
+    <div id="prodimg">
+    </div>
+    <div id="details">
+    
+    </div>
+   
+</div>
+<div id="extra">
+    <div class="extrap"><a href="#description"><h3 >Description</h3></a></div>
+    <div class="extrap"><a href="#reviews"><h3>Reviews</h3></a></div>
+    <div class="extrap">    <a href="#QnA"><h3>QnA</h3></a></div>
+</div>
+<h2>Highlights</h2>
+<div id="description"></div>
+<h2>Customer Reviews</h2>
+<div id="reviews">
+    User 1:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
+    User 2:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
+    User 3:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br>
+</div>
+<h2>Questions & Answers</h2>
+<div id="QnA">
+    <p>Temporarily no Discussion</p>
+</div>    
+</body>
+</html>
+<script type="module">
+    let images=['https://www.tronsmart.com/3531-thickbox_default/element-t6-plus-portable-bluetooth-speaker.jpg',
+    'https://www.tronsmart.com/2787-thickbox_default/element-t6-plus-portable-bluetooth-speaker.jpg',
+    'https://www.tronsmart.com/2075-thickbox_default/element-t6-plus-portable-bluetooth-speaker.jpg'
+    ]
+    let items=JSON.parse(localStorage.getItem("cartitems"))||[];
+    console.log(items)
+    let obj={
+        image:'https://img.gkbcdn.com/p/2019-03-18/tronsmart-element-t6-plus-bluetooth-speaker-black-1574132869322._w280_p1_.jpg',
+        name:'Tronsmart T6 Plus Portable Bluetooth 5.0',
+        fullname:'Tronsmart Element T6 Plus Portable Bluetooth 5.0 Speaker with 40W Max Output, Deep Bass, IPX6 Waterproof, TWS - Black',
+        brand:"Tronsmart",
+        price:'4830',
+        originalprice:"6441",
+        discpercent:"25",
+        count:1,
+        rating:'4.91 211 Reviews ',
+        descriptionimg:'https://img.gkbcdn.com/s3/d/201911/c66a3a7c-bab3-433e-8dca-bc540ae5639b.jpg',
+        description:`Makes Great Bass Even Better
+T6 Plus is a new generation of Portable Bluetooth Speakers. It has a max output of 40W allowing it to deliver an extra kick of bass like never before.
+
+Give your party an extra boost with SoundPulse™
+SoundPulse™ technology delivers a 40W max output making the bass deeper, and vocals more define.
+
+Deep Bass
+Dual passive radiators with two 20W full-range stereo loudspeakers to provide low-end tunes and deep bass sound.
+
+Intuitive Multifunctional Control Wheel
+Control the volume with a simple rotating wheel. Press to play & pause music, and make hands-free phone calls. Hold for 3 seconds to activate the voice assistant.
+
+IPX6 Water Resistant
+Element T6 Plus is built to withstand heavy splashes, rain and sweat.  
+
+True Wireless Stereo
+Connect two Element T6 Plus speakers for a 3D stereo sound to bring your party to life.
+
+Tri-Bass Effects
+Hear your music in 3 different equalizer audio modes that can suit any music genre. (The default audio mode is Vocal.)
+
+Up to 15 Hours of Play Time
+Music lasts for up to 15 hours of play time on a single charge.
+
+Bluetooth 5.0
+Bluetooth 5.0 offers the latest connectivity option for more stable connection & better range.
+
+USB Charging Port
+It carries an in-built power bank that can charge your mobile devices.
+
+`,
+    }
+    import {sshow,descrip} from "./appendfetch.js";
+    let product_cont=document.querySelector('#details');
+    let title=document.createElement('h4')
+    title.innerText=obj.fullname;
+    let div1=document.createElement('div');
+    div1.id='rating';
+
+    let star=     document.createElement('img')
+    star.src='./download.png';
+    star.className='icons'
+    let rating=     document.createElement('p')
+    rating.innerText=`${obj.rating} `;
+    let brand = document.createElement('p');
+    brand.innerText= `Brand: ${obj.brand}`
+
+    div1.append(star,rating,brand)
+
+
+    let div2=document.createElement("div")
+    div2.id='flashdeal'
+    let tbolt=     document.createElement('img')
+    tbolt.className='icons'
+    tbolt.src="./thunderbolt.jpg"
+
+    let flashdeal=document.createElement('h4')
+    flashdeal.id="fdtext"
+    flashdeal.innerText=`Flashdeal`
+
+    let div21=document.createElement('div');
+    div21.id="timers"
+    let timer1=     document.createElement('h4');
+    let timer2=     document.createElement('h4')
+    timer1.innerText="Ends in 1 day 10 : 10 :";
+    timer2.innerText=" 0";
+
+    //TO display timer
+    function timer(){
+        let i=59
+        let j=10;
+        let id=setInterval(function(){
+            
+            // console.log(i)
+                if(j==0){
+                // h.innerText="0"
+                clearInterval(id)
+            }
+            
+            timer2.innerText=` ${i} `;
+            i--;
+
+            if(i==0){
+                j--;
+                timer1.innerText="Ends in 1 day 10 : "+j+" : ";
+                i=60;
+            }
+        },1000)
+    }
+    timer();
+    div21.append(timer1,timer2)
+    div2.append(tbolt,flashdeal,div21)
+
+    let price=document.createElement('div');
+    price.id="price"
+    price.innerHTML=`<p id="actprice">₹${obj.price}</p> 
+    <p id="origprice"><s>₹${obj.originalprice}</s></p>
+    <p id="discpercent">${obj.discpercent}% OFF</p>
+    `
+
+
+    //-------------------------------------------------------------------------------//
+    let counter=document.createElement('div');
+    counter.id="counter"
+    let count=obj.count;
+
+    let qty=document.createElement('div');
+    qty.innerHTML=`QTY : `
+    let countdisplay=document.createElement('div');
+    countdisplay.id="count"
+    countdisplay.innerText=count;
+    let incb=document.createElement("div")
+    incb.id="countplus"
+    incb.innerText="+"
+    let decb=document.createElement("div")
+    decb.innerText="-"
+    decb.id="countminus"
+
+    decb.addEventListener("click", decFun);
+
+  function decFun() {
+    if(count==1)
+    count=1;
+    else
+    count--;
+    countdisplay.innerText = count;
+    obj.count=count;
+    // localStorage.setItem("counterValue", count);
+  }
+
+  incb.addEventListener("click", incFun);
+
+  function incFun() {
+    count++;
+    countdisplay.innerText = count;
+    obj.count=count;
+    // localStorage.setItem("counterValue", count);
+  }
+  counter.append(qty,decb,countdisplay,incb)
+  //--------------------------------------------------------------------------------------//
+    let shipping=document.createElement("p")
+    shipping.id="shipping"
+    shipping.innerText="Shipping within 3-5 days, Delivery within 10 days"
+
+    let buycart=document.createElement("div")
+    buycart.id="buycart"
+    let bt1=document.createElement("button")
+    bt1.id="addcart"
+    let bt2=document.createElement('button')
+    bt2.id="buynow"
+    bt1.innerText="Add to Cart"
+    bt2.innerText="Buy Now"
+
+    bt1.addEventListener("click",buy)
+    
+    buycart.append(bt1,bt2)
+
+    let payment=document.createElement("div")
+    payment.id="payment"
+    let pay=document.createElement("p")
+    pay.innerText="Payment: "
+    pay.style.marginTop="3%"
+    let paypal=document.createElement('img')
+    paypal.src="./paypal.png"
+    paypal.id="iconpay"
+
+    payment.append(pay,paypal)
+
+
+    product_cont.append(title,div1,div2,price,counter,shipping,buycart,payment)
+    let container=document.querySelector("#prodimg");
+    sshow(container,images)
+    let description=document.getElementById("description")
+    descrip(description,obj)
+
+    function buy(){
+    if(items.length==0||items[items.length-1].name!==obj.name)
+    items.push(obj)
+    else
+    items[items.length-1]=obj;
+    localStorage.setItem("cartitems",JSON.stringify(items))
+    console.log("yippee")
+}
+
+</script>

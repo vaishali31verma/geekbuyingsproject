@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="commonstyles.css">
+<body>
+    <div id="navbar"></div>
+    <div id="banner">
+        <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg">
+    </div>
+    <div id="main">
+    <div id="prodimg">
+    </div>
+    <div id="details">
+    
+    </div>
+   
+</div>
+<div id="extra">
+    <div class="extrap"><a href="#description"><h3 >Description</h3></a></div>
+    <div class="extrap"><a href="#reviews"><h3>Reviews</h3></a></div>
+    <div class="extrap">    <a href="#QnA"><h3>QnA</h3></a></div>
+</div>
+<h2>Highlights</h2>
+<div id="description"></div>
+<h2>Customer Reviews</h2>
+<div id="reviews">
+    User 1:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
+    User 2:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
+    User 3:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br>
+</div>
+<h2>Questions & Answers</h2>
+<div id="QnA">
+    <p>Temporarily no Discussion</p>
+</div>    
+</body>
+</html>
+<script type="module">
+    let images=['https://sc04.alicdn.com/kf/Hcba7b9293ea74c4aad4abc4d4c2a1c9aA.jpg',
+    'https://sc04.alicdn.com/kf/H210da676b7ce435fbee1bb239bf9ca30b.jpg',
+    'https://sc04.alicdn.com/kf/H8bb220757c0c499e8d5ca4c8661cdcadM.jpg'
+    ]
+    let items=JSON.parse(localStorage.getItem("cartitems"))||[];
+    console.log(items)
+    let obj={
+        image:'https://img.gkbcdn.com/p/2017-11-25/mx3-l-m-backlight-voice-input-2-4ghz-wireless-air-mouse-1571989128244._w280_p1_.jpg',
+        name:'JJRC X12 AURORA 4K 5G WIFI 3KM',
+        fullname:'JJRC X12 AURORA 4K 5G WIFI 3KM FPV GPS Foldable RC Drone With 3Axis Gimbal 50X Digital Zoom Ultrasonic Positioning RTF - White Two Batteries with Bag',
+        brand:"JJRC",
+        price:'18520',
+        originalprice:"26573",
+        discpercent:"30",
+        count:1,
+        rating:'4.95 57 Reviews ',
+        descriptionimg:'https://img.gkbcdn.com/s3/d/202010/36662eea-c9fb-40e0-921a-18278f879d2f.jpg',
+        description:`3-Axis Stable Gimbal
+
+The drone features a three-axis auto-stabilizing gimbal to minimize vibration and remain parallel to the horizon for sharper images.
+
+4K Camera
+
+The 4K anti-shake HD camera features a resolution that compares favorably with the film quality with the distortion-free camera. The great optical performance can capture every wonderful moment in your life with premium images.
+
+5G Image Transmission
+
+The 5G frequency allows for real-time transmission without interference, making the transmission smoother and the images clearer to help you seize the wonderful moments.
+
+Up to 3000 Meters of Range
+
+The transmission images remain clear and sharp with a long transmission range of up 3000 to meters.
+
+Barometer Positioning
+
+The optical low positioning system utilizes the visual computing module on the drone' s bottom to help the drone hover in the air. So the drone can still hover in the precise location at a stable condition if there is no GPS signal around, like the indoor environment.
+
+GPS RTH
+
+With the GPS return to home function, the drone can fly freely regardless of the strength of the GPS signal. It can also automatically return to home when out of the effective range. The electronic fencing technology allows the drone to return to the home point at low voltage condition and fly within a 20-meter radius.
+
+Smart Auto Follow
+
+The visual tracking is supported by Al technology to precisely target and follows the objects
+
+Foldable Design
+
+Fold up the propellers and the four crankshafts for easy storage and transport.
+
+Portable to Fit in the Bag
+
+The bag provides secure storage for your drone and all other parts so you can carry it on the go.`,
+
+
+    }
+    import {sshow,descrip} from "./appendfetch.js";
+    let product_cont=document.querySelector('#details');
+    let title=document.createElement('h4')
+    title.innerText=obj.fullname;
+    let div1=document.createElement('div');
+    div1.id='rating';
+
+    let star=     document.createElement('img')
+    star.src='./download.png';
+    star.className='icons'
+    let rating=     document.createElement('p')
+    rating.innerText=`${obj.rating} `;
+    let brand = document.createElement('p');
+    brand.innerText= `Brand: ${obj.brand}`
+
+    div1.append(star,rating,brand)
+
+
+    let div2=document.createElement("div")
+    div2.id='flashdeal'
+    let tbolt=     document.createElement('img')
+    tbolt.className='icons'
+    tbolt.src="./thunderbolt.jpg"
+
+    let flashdeal=document.createElement('h4')
+    flashdeal.id="fdtext"
+    flashdeal.innerText=`Flashdeal`
+
+    let div21=document.createElement('div');
+    div21.id="timers"
+    let timer1=     document.createElement('h4');
+    let timer2=     document.createElement('h4')
+    timer1.innerText="Ends in 1 day 10 : 10 :";
+    timer2.innerText=" 0";
+
+    //TO display timer
+    function timer(){
+        let i=59
+        let j=10;
+        let id=setInterval(function(){
+            
+            // console.log(i)
+                if(j==0){
+                // h.innerText="0"
+                clearInterval(id)
+            }
+            
+            timer2.innerText=` ${i} `;
+            i--;
+
+            if(i==0){
+                j--;
+                timer1.innerText="Ends in 1 day 10 : "+j+" : ";
+                i=60;
+            }
+        },1000)
+    }
+    timer();
+    div21.append(timer1,timer2)
+    div2.append(tbolt,flashdeal,div21)
+
+    let price=document.createElement('div');
+    price.id="price"
+    price.innerHTML=`<p id="actprice">₹${obj.price}</p> 
+    <p id="origprice"><s>₹${obj.originalprice}</s></p>
+    <p id="discpercent">${obj.discpercent}% OFF</p>
+    `
+
+
+    //-------------------------------------------------------------------------------//
+    let counter=document.createElement('div');
+    counter.id="counter"
+    let count=obj.count;
+
+    let qty=document.createElement('div');
+    qty.innerHTML=`QTY : `
+    let countdisplay=document.createElement('div');
+    countdisplay.id="count"
+    countdisplay.innerText=count;
+    let incb=document.createElement("div")
+    incb.id="countplus"
+    incb.innerText="+"
+    let decb=document.createElement("div")
+    decb.innerText="-"
+    decb.id="countminus"
+
+    decb.addEventListener("click", decFun);
+
+  function decFun() {
+    if(count==1)
+    count=1;
+    else
+    count--;
+    countdisplay.innerText = count;
+    obj.count=count;
+    // localStorage.setItem("counterValue", count);
+  }
+
+  incb.addEventListener("click", incFun);
+
+  function incFun() {
+    count++;
+    countdisplay.innerText = count;
+    obj.count=count;
+    // localStorage.setItem("counterValue", count);
+  }
+  counter.append(qty,decb,countdisplay,incb)
+  //--------------------------------------------------------------------------------------//
+    let shipping=document.createElement("p")
+    shipping.id="shipping"
+    shipping.innerText="Shipping within 3-5 days, Delivery within 10 days"
+
+    let buycart=document.createElement("div")
+    buycart.id="buycart"
+    let bt1=document.createElement("button")
+    bt1.id="addcart"
+    let bt2=document.createElement('button')
+    bt2.id="buynow"
+    bt1.innerText="Add to Cart"
+    bt2.innerText="Buy Now"
+
+    bt1.addEventListener("click",buy)
+    
+    buycart.append(bt1,bt2)
+
+    let payment=document.createElement("div")
+    payment.id="payment"
+    let pay=document.createElement("p")
+    pay.innerText="Payment: "
+    pay.style.marginTop="3%"
+    let paypal=document.createElement('img')
+    paypal.src="./paypal.png"
+    paypal.id="iconpay"
+
+    payment.append(pay,paypal)
+
+
+    product_cont.append(title,div1,div2,price,counter,shipping,buycart,payment)
+    let container=document.querySelector("#prodimg");
+    sshow(container,images)
+    let description=document.getElementById("description")
+    descrip(description,obj)
+
+    function buy(){
+    if(items.length==0||items[items.length-1].name!==obj.name)
+    items.push(obj)
+    else
+    items[items.length-1]=obj;
+    localStorage.setItem("cartitems",JSON.stringify(items))
+    console.log("yippee")
+}
+
+</script>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+    }
+    h1{
+        text-align: center;
+    }
+    #container>div>img{
+    width: 100%;
+    height: 60%;
+    border-bottom: 0.5px solid black;
+}
+#container{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,500px);
+    gap: 20px;
+}
+#container>div:hover{
+    cursor: pointer;
+    background-color: rgb(185, 200, 200);
+}
+#container>div{
+    /* border: 1px solid saddlebrown; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+p,h3{
+    margin-left: 2%;
+    line-height: 16px;
+}
+#original{
+    text-decoration: line-through;
+}
+#ratings{
+    display: flex;
+    /* border: 1px solid red; */
+
+}
+#ratings img{
+    width: 75px;
+    height: 30px;
+    margin-top: 2.8%;
+}
+</style>
+<body>
+    <div id="navbar">
+
+    </div>
+    <h1>Bestselling</h1>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    
+
+
+    data=[
+
+    {   
+            image:'https://img.gkbcdn.com/p/2018-11-22/netac-n600s-1tb-ssd-2-5-inch-solid-state-drive-blue-1571991121689._w280_p1_.jpg',
+            name:'Netac N600S 1TB SSD 2.5 Inch Solid State Drive SATA3 - Blue',
+            discprice:"11272",
+            origprice:"13044",
+            stars:159
+        },
+    {   
+            name:"STmagic SPT31 512GB Mini Portable M.2 SSD ",
+            image:"https://img.gkbcdn.com/p/2019-02-20/stmagic-spt31-512g-mini-portable-m-2-ssd-gray-1571995742585._w280_p1_.jpg",
+            discprice:"6038",
+            origprice:"7407",
+            stars:48
+        },
+        {   
+            name:"Tronsmart Element Mega SoundPulse",
+            image:"https://img.gkbcdn.com/p/2019-01-31/tronsmart-element-mega-bluetooth-speaker-black-1571991584812._w280_p1_.jpg",
+            discprice:"3542",
+            origprice:"5394",
+            stars:328
+        },
+        {   
+            name:"MX3-L-M Backlight & Voice Input 6-Axis Gyro",
+            image:"https://img.gkbcdn.com/p/2017-11-25/mx3-l-m-backlight-voice-input-2-4ghz-wireless-air-mouse-1571989128244._w280_p1_.jpg",
+            discprice:"1126",
+            origprice:"1500",
+            stars:11
+        },
+        {   
+            name:"JJRC X12 AURORA 4K 5G WIFI 3KM ",
+            image:"https://img.gkbcdn.com/p/2019-10-11/jjrc-x12-4k-gps-rc-drone-white-two-batteries-with-bag-1574132236117._w280_p1_.jpg",
+            discprice:"18520",
+            origprice:"26573",
+            stars:89
+        },
+        {   
+            name:"Tronsmart Force SoundPulse™ 40W Bluetooth",
+            image:"https://img.gkbcdn.com/p/2019-01-31/tronsmart-element-force-portable-bluetooth-speaker-1571993707403._w280_p1_.jpg",
+            discprice:"4589",
+            origprice:"5636",
+            stars:219
+        },
+        {   
+            name:"Tronsmart Element T6 Plus Portable Bluetooth 5.0",
+            image:"https://img.gkbcdn.com/p/2019-03-18/tronsmart-element-t6-plus-bluetooth-speaker-black-1574132869322._w280_p1_.jpg",
+            discprice:"4830",
+            origprice:"6441",
+            stars:120
+        },
+        {   
+            name:"Xiaomi WiFi Amplifier Pro 2X2 External Antenna 300Mbps",
+            image:"https://img.gkbcdn.com/p/2017-07-26/xiaomi-wifi-amplifier-pro-black-1574132393616._w280_p1_.jpg",
+            discprice:"1609",
+            origprice:"2173",
+            stars:35
+        },
+        {   
+            name:"Apods i500 Bluetooth 5.0 Pop-up Window",
+            image:"https://img.gkbcdn.com/p/2019-11-30/tws-i500-earphones-20191130100234539._w280_p1_.jpg",
+            discprice:"1207",
+            origprice:"2012",
+            stars:125
+        },
+        {   
+            name:"Tronsmart Onyx Ace Pro True Wireless",
+            image:"https://img.gkbcdn.com/p/2020-03-18/Tronsmart-Onyx-Ace-Bluetooth-5-0-TWS-Earphones-White-899355-._w280_p1_.jpg",
+            discprice:"2817",
+            origprice:"3220",
+            stars:114
+        },
+        {   
+            name:"Tronsmart Force/Mega/T6/T6 Plus/T6 Plus Upgraded",
+            image:"https://img.gkbcdn.com/p/2019-03-16/tronsmart-force-mega-t6-t6-plus-speaker-carry-case-1571991604256._w280_p1_.jpg",
+            discprice:"965",
+            origprice:"1122",
+            stars:72
+        },
+        {   
+            name:"Mifo O7 Bluetooth 5.0 Qualcomm QCC3020",
+            image:"https://img.gkbcdn.com/p/2019-11-15/mifo-o7-bluetooth-5-0-tws-qualcomm-qcc3020-earphones-black-1574132882676._w280_p1_.jpg",
+            discprice:"7246",
+            origprice:"12883",
+            stars:89
+        },
+        {   
+            name:"C120 English Version 6-Axis Gyro 2.4G Mini ",
+            image:"https://img.gkbcdn.com/p/2017-10-21/c120-6-axis-gyro-2-4g-mini-air-mouse-1571989094158._w280_p1_.jpg",
+            discprice:"723",
+            origprice:"804",
+            stars:80
+        },
+        {   
+            name:"Tronsmart T2 Plus 20W Bluetooth 5.0 Speaker ",
+            image:"https://img.gkbcdn.com/p/2019-08-27/tronsmart-t2-plus-20w--bluetooth-5-0-speaker-tws-1571994588089._w280_p1_.jpg",
+            discprice:"2656",
+            origprice:"3381",
+            stars:211
+        },
+        {   
+            name:"Tronsmart Element T6 Mini 15W Bluetooth 5.0",
+            image:"https://img.gkbcdn.com/p/2019-09-27/tronsmart-element-t6-mini-bluetooth-5-0-speaker---black-1571994046957._w280_p1_.jpg",
+            discprice:"2817",
+            origprice:"3100",
+            stars:119
+        },
+        {   
+            name:"A6R TWS Bluetooth V5.0 Button Control IPX4 ",
+            image:"https://img.gkbcdn.com/p/2022-02-10/a6r-tws-wireless-earphones-black-4570b2-1644488631155._w280_p1_.jpg",
+            discprice:"691",
+            origprice:"1207",
+            stars:85
+        },
+        {   
+            name:"Bundle Tronsmart Force SoundPulse™ 40W",
+            image:"https://img.gkbcdn.com/p/2019-07-02/tronsmart-element-force-portable-bluetooth-speaker---carrying-case-1571993695019._w280_p1_.jpg",
+            discprice:"4830",
+            origprice:"6119",
+            stars:70
+        },  {   
+            name:"ENCHEN Multi-purpose Electric Hair Clipper Trimmer",
+            image:"https://img.gkbcdn.com/p/2020-04-03/ENCHEN-Multi-purpose-Electric-Hair-Clipper-Trimmer-Black-901271-._w280_p1_.jpg",
+            discprice:"1368",
+            origprice:"1529",
+            stars:74
+        }, {   
+            name:"Razer DeathAdder Essential Optical Professional Grade Gaming Mouse ",
+            image:"https://img.gkbcdn.com/p/2021-11-29/razer-deathadder-essential-optical-gaming-mouse-black-aa9d23-1638169302886._w280_p1_.jpg",
+            discprice:"2415",
+            origprice:"3059",
+            stars:60
+        }, {   
+            name:"E6S Bluetooth 5.0 TWS Earphones Siri ",
+            image:"https://img.gkbcdn.com/p/2019-09-23/e6s-bluetooth5-0-tws-earphones-power-display-1574132636939._w280_p1_.jpg",
+            discprice:"715",
+            origprice:"965",
+            stars:60
+        }, {   
+            name:"Tronsmart Groove 2 10W TWS Bluetooth Speaker",
+            image:"https://img.gkbcdn.com/p/2022-05-30/tronsmart-element-groove-bluetooth-speaker-black-bbd0c8-1653893706349._w280_p1_.jpg",
+            discprice:"2415",
+            origprice:"2817",
+            stars:47
+        }, 
+       
+        
+    ]
+        let container=document.querySelector("#container")
+    
+    let append=(data)=>{
+    data.forEach(function(el){
+        let img=document.createElement("img");
+        img.src=el.image;
+
+        let h2=document.createElement("p");
+        h2.innerText=el.name;
+
+        let p=document.createElement("h3");
+        p.innerText="₹"+el.discprice;
+        
+        let p1=document.createElement("p");
+        p1.id="original"
+        p1.innerText="₹"+el.origprice;
+
+        let div2=document.createElement("div");
+        div2.id="ratings"
+        let star=document.createElement("img");
+        star.src="https://img.freepik.com/free-vector/five-stars-rating-vector-icon_38133-30.jpg?w=2000"
+        
+        let starnum=document.createElement("p");
+        starnum.innerText=el.stars
+        div2.append(star,starnum)
+        let div=document.createElement("div");
+        div.append(img,h2,p,p1,div2)
+
+        container.append(div)
+    })   
+}
+append(data);
+
+let sdiv=document.querySelectorAll("#container>div");
+for(let i=0;i<sdiv.length;i++){
+    sdiv[i].addEventListener("click",function(){
+        window.location.href=`p${i}.html`
+    })
+}
+
+</script>

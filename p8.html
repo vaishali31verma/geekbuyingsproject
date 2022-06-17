@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="commonstyles.css">
+<body>
+    <div id="navbar"></div>
+    <div id="banner">
+        <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg">
+    </div>
+    <div id="main">
+    <div id="prodimg">
+    </div>
+    <div id="details">
+    
+    </div>
+   
+</div>
+<div id="extra">
+    <div class="extrap"><a href="#description"><h3 >Description</h3></a></div>
+    <div class="extrap"><a href="#reviews"><h3>Reviews</h3></a></div>
+    <div class="extrap">    <a href="#QnA"><h3>QnA</h3></a></div>
+</div>
+<h2>Highlights</h2>
+<div id="description"></div>
+<h2>Customer Reviews</h2>
+<div id="reviews">
+    User 1:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
+    User 2:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
+    User 3:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br>
+</div>
+<h2>Questions & Answers</h2>
+<div id="QnA">
+    <p>Temporarily no Discussion</p>
+</div>    
+</body>
+</html>
+<script type="module">
+  let images=['https://c1.neweggimages.com/ProductImage/A91BS191210zESDI.jpg',
+    'https://c1.neweggimages.com/ProductImageCompressAll1280/A91BS191210oXt21.jpg',
+    'https://c1.neweggimages.com/ProductImageCompressAll1280/A91BS191210mILou.jpg'
+    ]
+    let items=JSON.parse(localStorage.getItem("cartitems"))||[];
+    console.log(items)
+    let obj={
+        image:'https://img.gkbcdn.com/p/2019-11-30/tws-i500-earphones-20191130100234539._w280_p1_.jpg',
+        name:'Apods i500 Bluetooth 5.0 Pop-up Window',
+        fullname:'Apods i500 Bluetooth 5.0 Pop-up Window TWS Earbuds Independent Usage Wireless Charging IPX5 - White',
+        brand:"Apods",
+        price:'1207',
+        originalprice:"2012",
+        discpercent:"40",
+        count:1,
+        rating:'4.89 35 Reviews ',
+        descriptionimg:'https://img.gkbcdn.com/s3/d/201911/72d8ec2f-3ea4-42c1-a180-f6157d38e032.jpg',
+        description:`Independent Usage
+
+The earbuds support binaural calls, and each earbud can be used independently.
+
+Pop-up Window
+
+The Apods i500 supports pop-up window function that it will pop-up a window on your phone when you open the charging case. The window will show the real battery using indication on your phone.
+
+Wireless Charging
+
+Lay it down to charge it up. With the QI wireless charging function, charging is simple that placing the Apods i500 case on a wireless charging mat. That's it. The LED indicator on the front of the case lets you know that your Apods are charging. And when you're away from a charging mat, you can charge by the lightning charging cable.
+
+Auto Pairing + Auto Connect
+
+After being taken out from the charging case, the Apods i10 earbuds are automatically on and always connected.
+
+Tap Control
+
+You can control the music's playing, which song you wanna play and more simply by touching the back surface of the device.`,
+    }
+    import {sshow,descrip} from "./appendfetch.js";
+    let product_cont=document.querySelector('#details');
+    let title=document.createElement('h4')
+    title.innerText=obj.fullname;
+    let div1=document.createElement('div');
+    div1.id='rating';
+
+    let star=     document.createElement('img')
+    star.src='./download.png';
+    star.className='icons'
+    let rating=     document.createElement('p')
+    rating.innerText=`${obj.rating} `;
+    let brand = document.createElement('p');
+    brand.innerText= `Brand: ${obj.brand}`
+
+    div1.append(star,rating,brand)
+
+
+    let div2=document.createElement("div")
+    div2.id='flashdeal'
+    let tbolt=     document.createElement('img')
+    tbolt.className='icons'
+    tbolt.src="./thunderbolt.jpg"
+
+    let flashdeal=document.createElement('h4')
+    flashdeal.id="fdtext"
+    flashdeal.innerText=`Flashdeal`
+
+    let div21=document.createElement('div');
+    div21.id="timers"
+    let timer1=     document.createElement('h4');
+    let timer2=     document.createElement('h4')
+    timer1.innerText="Ends in 1 day 10 : 10 :";
+    timer2.innerText=" 0";
+
+    //TO display timer
+    function timer(){
+        let i=59
+        let j=10;
+        let id=setInterval(function(){
+            
+            // console.log(i)
+                if(j==0){
+                // h.innerText="0"
+                clearInterval(id)
+            }
+            
+            timer2.innerText=` ${i} `;
+            i--;
+
+            if(i==0){
+                j--;
+                timer1.innerText="Ends in 1 day 10 : "+j+" : ";
+                i=60;
+            }
+        },1000)
+    }
+    timer();
+    div21.append(timer1,timer2)
+    div2.append(tbolt,flashdeal,div21)
+
+    let price=document.createElement('div');
+    price.id="price"
+    price.innerHTML=`<p id="actprice">₹${obj.price}</p> 
+    <p id="origprice"><s>₹${obj.originalprice}</s></p>
+    <p id="discpercent">${obj.discpercent}% OFF</p>
+    `
+
+
+    //-------------------------------------------------------------------------------//
+    let counter=document.createElement('div');
+    counter.id="counter"
+    let count=obj.count;
+
+    let qty=document.createElement('div');
+    qty.innerHTML=`QTY : `
+    let countdisplay=document.createElement('div');
+    countdisplay.id="count"
+    countdisplay.innerText=count;
+    let incb=document.createElement("div")
+    incb.id="countplus"
+    incb.innerText="+"
+    let decb=document.createElement("div")
+    decb.innerText="-"
+    decb.id="countminus"
+
+    decb.addEventListener("click", decFun);
+
+  function decFun() {
+    if(count==1)
+    count=1;
+    else
+    count--;
+    countdisplay.innerText = count;
+    obj.count=count;
+    // localStorage.setItem("counterValue", count);
+  }
+
+  incb.addEventListener("click", incFun);
+
+  function incFun() {
+    count++;
+    countdisplay.innerText = count;
+    obj.count=count;
+    // localStorage.setItem("counterValue", count);
+  }
+  counter.append(qty,decb,countdisplay,incb)
+  //--------------------------------------------------------------------------------------//
+    let shipping=document.createElement("p")
+    shipping.id="shipping"
+    shipping.innerText="Shipping within 3-5 days, Delivery within 10 days"
+
+    let buycart=document.createElement("div")
+    buycart.id="buycart"
+    let bt1=document.createElement("button")
+    bt1.id="addcart"
+    let bt2=document.createElement('button')
+    bt2.id="buynow"
+    bt1.innerText="Add to Cart"
+    bt2.innerText="Buy Now"
+
+    bt1.addEventListener("click",buy)
+    
+    buycart.append(bt1,bt2)
+
+    let payment=document.createElement("div")
+    payment.id="payment"
+    let pay=document.createElement("p")
+    pay.innerText="Payment: "
+    pay.style.marginTop="3%"
+    let paypal=document.createElement('img')
+    paypal.src="./paypal.png"
+    paypal.id="iconpay"
+
+    payment.append(pay,paypal)
+
+
+    product_cont.append(title,div1,div2,price,counter,shipping,buycart,payment)
+    let container=document.querySelector("#prodimg");
+    sshow(container,images)
+    let description=document.getElementById("description")
+    descrip(description,obj)
+
+    function buy(){
+    if(items.length==0||items[items.length-1].name!==obj.name)
+    items.push(obj)
+    else
+    items[items.length-1]=obj;
+    localStorage.setItem("cartitems",JSON.stringify(items))
+    console.log("yippee")
+}
+
+</script>
