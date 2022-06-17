@@ -8,16 +8,30 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
     <style>
-        *{
+        /* *{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
              'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+        } */
+
+        *{
+    /* box-sizing: border-box;
+    padding: 0px;
+    margin: 0px; */
+    font-family: sans-serif;
+}
+#header>img{
+    width: 100%;
+    height: 120px;
+    margin: 0px;
+}
 
         #header{
-            border: 1px solid red;
+            box-sizing: border-box;
+    padding: 0px;
             width: 100%;
-            margin: auto;
-            height: 200px;
+            margin: 0px;
+            /* margin: auto; */
+            height: 160px;
         }
 
         #main{
@@ -116,7 +130,9 @@
     </style>
 </head>
 <body>
-    <div id="header"></div>
+    <div id="header">
+        <img src="./Screenshot (643).png" alt="">
+    </div>
     <div><h1>Payment Gateway</h1></div>
     <div id="main">
         <div id="option">
@@ -178,17 +194,17 @@
 </body>
 </html>
 <script>
-    let total =localStorage.getItem("total");
+    let x =localStorage.getItem("final");
 
-    total= Number(total);
+    x= Number(x);
 
-    document.querySelector("#mini2>p:nth-Child(1)").innerText=total;
+    document.querySelector("#mini2>p:nth-Child(1)").innerText=x;
    
 let amt=document.querySelector("#mini2>p:nth-Child(2)").innerText;
 
 amt=Number(amt);
 
-let finalAmt=total+amt;
+let finalAmt=x+amt;
 
 document.querySelector("#total>p:nth-Child(2)").innerText=finalAmt;
 

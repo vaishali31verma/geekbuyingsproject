@@ -116,5 +116,5 @@ function deleteItem(el,index){
 }
 
 document.querySelector("#e1").addEventListener("click",function(){
-    window.location.href="payment.html"
+    window.location.href="../Shipping page/shipping.html"
 })
