@@ -48,7 +48,8 @@ function navbar() {
     </div>
     <div id="top_navbar_second">
         <div id="top_navbar_second_img">
-            <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/Geekbuying.png" alt="">
+        <a href="/geekbuyingsproject/index.html"> <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/Geekbuying.png" alt=""></a>
+           
         </div>
         <div id="top_navbar_second_search">
             <select name="" id="">
@@ -65,9 +66,10 @@ function navbar() {
         </div>
         <div id="top_navbar_second_address">
             <p>Ship to</p>
-            <div>
+            <div id="home">
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="">
-            <p>  INR  </p>
+            
+            <p id="india">  INR  </p>
             <div id="test">
             <div id="shipToBox">
                 <h5>Select Regional settings</h5>
@@ -103,34 +105,40 @@ function navbar() {
         </div>
         </div>
         <div id="top_navbar_second_user">
-            <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1510/ylivdesign151000120/46153782-profile-icon-white-simple-image-isolated-on-blue-background.jpg?ver=6" alt="">
-            <p>Sign in</p>
+        <a href="/geekbuyingsproject/credential/signin.html"> <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1510/ylivdesign151000120/46153782-profile-icon-white-simple-image-isolated-on-blue-background.jpg?ver=6" alt=""></a>
+           
+            <p id="signin"></p>
         </div>
-        <div id="top_navbar_second_cart">
-            <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/cart.png" alt="">
+        <div id="top_navbar_second_cart" >
+        <a href="/geekbuyingsproject/cart/cart.html"> <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/cart.png" alt=""></a>
+           
         </div>
     </div>
     <div id="top_navbar_last">
         <div id="top_category">Categories 
             <div id="drop_category">
-               <p>Local Warehouses</p>
-               <p>Sports and Outdoors</p>
+            <a class="option" href="/geekbuyingsproject/data/bluetooth_speaker.html"><p>Bluetooth Speakers</p></a>
+          
+               <a class="option" href="/geekbuyingsproject/data/headphones.html"><p>Headphones</p></a>
+               <a class="option" href="/geekbuyingsproject/data/wearable_Devices.html"><p>Wearable devices</p></a>
                <p>Smart Home & Garden</p>
-               <p>Consumer Electronics</p>
+               <a class="option" href="/geekbuyingsproject/data/consumer_Electronics.html"><p>Consumer Electronics</p></a>
+               
                <p>TV Boxes & Mini PCs</p>
                <p>Computer & Tablets</p>
                <p>Toys & Hobbies</p>
                <p>Phones & Accessories</p>
                <p>Automobiles & Motorcycles</p>
-               <p>Wearable devices</p>
+               
+               
                <p>Security Systems</p>
                <p>Fashion</p>
             </div>
         </div>
         <div id="all_options_categories">
-        <div ><a class="newxx" href="../new.section/new.html">New</a></div>
-        <div>Bestselling</div>
-        <div><a class="newxx" href="../Brand/brand.html">Brand</a></div>
+        <div ><a class="newxx" href="/geekbuyingsproject/new.section/new.html">New</a></div>
+        <div><a class="newxx"  href="/geekbuyingsproject/bestselling.html">BestSelling</a></div>
+        <div><a class="newxx" href="/geekbuyingsproject/Brand/brand.html">Brand</a></div>
         <div>Clearance</div>
         <div>Deals</div>
         <div>Coupons</div>
@@ -139,6 +147,9 @@ function navbar() {
 </div>
 </div>`
 }
+
+// href = "../Brand/brand.html"
+
 
 function footer() {
     return ` <div id="footer_div">

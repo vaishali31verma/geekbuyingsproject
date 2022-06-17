@@ -1,7 +1,7 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-import {navbar,footer} from "./navbar/navbar.js"
+import { navbar, footer } from "./navbar/navbar.js"
 document.getElementById("top-navbar").innerHTML = navbar()
 
 document.getElementById("footer").innerHTML = footer()
@@ -118,7 +118,7 @@ var data1 = [{
 let display1 = (data1) => {
   data1.forEach(function (el) {
     var div = document.createElement("div")
-    div.addEventListener("click",function(){
+    div.addEventListener("click", function () {
       datainlocal(el)
     })
     var image = document.createElement("img")
@@ -144,9 +144,9 @@ let display1 = (data1) => {
 
 }
 display1(data1)
-let datainlocal = (el)=>{
-  localStorage.setItem("item",JSON.stringify(el))
-  window.location.href="../geekbuyingsproject/showdetaileddata/showdata.html"
+let datainlocal = (el) => {
+  localStorage.setItem("item", JSON.stringify(el))
+  window.location.href = "../geekbuyingsproject/showdetaileddata/showdata.html"
 }
 
 var data2 = [{
@@ -192,8 +192,8 @@ let data3 = [
   {
 
     image: "https://img.gkbcdn.com/p/2022-05-25/Hawkeye-Firefly-X-4K-60fps-170-Degree-Wide-Angle-501280-0._w280_p1_.jpg",
-    original:  1852038,
-    before:  18538,
+    original: 1852038,
+    before: 18538,
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera"
 
 
@@ -201,8 +201,8 @@ let data3 = [
   {
 
     image: "https://img.gkbcdn.com/p/2022-06-07/MIYOO-Mini-32GB-3000-Games-Retro-Handheld-Game-Console-Blue-501578-0._w280_p1_.jpg",
-    original:  2228.12,
-    before:  22212,
+    original: 2228.12,
+    before: 22212,
     detail: "Miyyo mini 32gb storing device "
 
 
@@ -210,8 +210,8 @@ let data3 = [
   {
 
     image: "https://img.gkbcdn.com/p/2022-06-08/GREEN-TIME-T2-Alarm-Clock-Radio-White-501646-0._w280_p1_.jpg",
-    original:  2415.23,
-    before:  24123,
+    original: 2415.23,
+    before: 24123,
     detail: "green Time green dual usb Alarm clock wireless radio"
 
 
@@ -219,8 +219,8 @@ let data3 = [
   {
 
     image: "https://img.gkbcdn.com/p/2022-05-25/Hawkeye-Firefly-X-4K-60fps-170-Degree-Wide-Angle-501280-0._w280_p1_.jpg",
-    original:  1207.10,
-    before:  12010,
+    original: 1207.10,
+    before: 12010,
     detail: "Mini wireless camera real Nanny tiny camera "
 
 
@@ -228,8 +228,8 @@ let data3 = [
   {
 
     image: "https://img.gkbcdn.com/p/2022-05-17/Mini-Camera-Full-HD-1080P-Camcorder-500596-0._w280_p1_.jpg",
-    original:  18538,
-    before:  185,
+    original: 18538,
+    before: 185,
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera"
 
 
@@ -237,7 +237,7 @@ let data3 = [
   {
 
     image: "https://img.gkbcdn.com/p/2022-05-09/ANBERNIC-RG503-Portable-Game-Console-16-64GB-Black-500314-0._w280_p1_.jpg",
-    original:  1852038,
+    original: 1852038,
     before: 18538,
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera"
 
@@ -247,7 +247,7 @@ let data3 = [
 
     image: "https://img.gkbcdn.com/p/2022-04-07/909cca47ceb64f20b40bf8c04f5b78de-499246-0._w280_p1_.jpg",
     original: 1852038,
-    before:  18538,
+    before: 18538,
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera"
 
 
@@ -255,8 +255,8 @@ let data3 = [
   {
 
     image: "https://img.gkbcdn.com/p/2022-05-25/Haylou-RS3-LS04-Smartwatch-1-2-Inch-AMOLED-HD-Display-501268-0._w280_p1_.jpg",
-    original:  1852038,
-    before:  18538,
+    original: 1852038,
+    before: 18538,
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera"
 
 
@@ -264,8 +264,8 @@ let data3 = [
   {
 
     image: "https://img.gkbcdn.com/p/2022-05-17/Mini-Camera-Full-HD-1080P-Camcorder-500596-0._w280_p1_.jpg",
-    original:  1852038,
-    before:  18538,
+    original: 1852038,
+    before: 18538,
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera"
 
 
@@ -273,8 +273,8 @@ let data3 = [
   {
 
     image: "https://img.gkbcdn.com/p/2022-05-25/Hawkeye-4K-Split-V4-Recording-Low-latency-FPV-Camera-with-Gyroflow-501277-0._w280_p1_.jpg",
-    original:  18538,
-    before:  185,
+    original: 18538,
+    before: 185,
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera"
 
 
@@ -282,8 +282,8 @@ let data3 = [
   {
 
     image: "https://img.gkbcdn.com/p/2022-05-30/3-5-Inch-IPS-TYPE-C-Secondary-Screen-CPU-GPU-RAM-HDD-Monitoring-501430-0._w280_p1_.jpg",
-    original:  1852038,
-    before:  18538,
+    original: 1852038,
+    before: 18538,
     detail: "Hawkeve firefly X?$K 170degree Wide angle wifi gryo camera"
 
 
@@ -294,7 +294,7 @@ let data3 = [
 function displaydata(data) {
   data.forEach(function (ele) {
     var div3 = document.createElement("div")
-    div3.addEventListener("click",function(){
+    div3.addEventListener("click", function () {
       datainlocal(ele)
     })
     var image = document.createElement("img")
@@ -304,10 +304,9 @@ function displaydata(data) {
     var original = document.createElement("p")
     var before = document.createElement("p")
     original.innerText = ele.original
-    original.innerText = ele.original
     before.innerText = ele.before
-    original.setAttribute("class", "soriginal")
-    original.setAttribute("class", "soriginal")
+
+
     before.setAttribute("class", "sbefore")
 
 
@@ -396,7 +395,7 @@ var data4 = [
   {
     image: "https://img.gkbcdn.com/p/2021-04-12/4inch-32GB-Handheld-Portable-Game-Console-5000-Games-458415-1._w280_p1_.jpg",
     off: 30 + "%off",
-   detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphones Carbon",
+    detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphones Carbon",
     star: "🌟🌟🌟🌟🌟",
     original: 1025.53,
     before: 10295.5,
@@ -460,7 +459,7 @@ var data4 = [
   {
     image: "https://img.gkbcdn.com/p/2021-11-29/razer-deathadder-essential-optical-gaming-mouse-black-aa9d23-1638169302886._w280_p1_.jpg",
     off: 30 + "%off",
-   detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphones Carbon",
+    detail: "Mifo O7 Bluetooth 5.0 Qualcomm QCC3020 TWS Earphones Carbon",
     star: "🌟🌟🌟🌟🌟",
     original: 1025.53,
     before: 10295.5,
@@ -518,7 +517,7 @@ var data4 = [
 let display4 = (data) => {
   data.forEach(function (el) {
     var div = document.createElement("div")
-    div.addEventListener("click",function(){
+    div.addEventListener("click", function () {
       datainlocal(el)
     })
     var image = document.createElement("img")
@@ -535,12 +534,13 @@ let display4 = (data) => {
 
     var p = document.createElement("p")
     p.innerText = el.original
-    p.innerText = el.before
-    p.setAttribute("class", "originald")
+    // p.innerText = el.before
+
     p.setAttribute("class", "befored")
 
     var star = document.createElement("p")
     star.innerText = el.star
+    star.id = star
     star.setAttribute("class", "star")
 
     div.append(image, h5, h4, star, p)
@@ -613,26 +613,26 @@ let data6 = [{
 },
 {
   image: "https://img.gkbcdn.com/p/2021-10-28/36v-10-4ah-removable-battery-for-eleglide-f1-electric-bike-1635406527480._w280_p1_.jpg",
-    off: 30 + "%off",
-      detail: "JIMMY PowerWash HW8 Cordless Wet Dry Smart",
-        original: 34025.5,
-          before: 340925.,
+  off: 30 + "%off",
+  detail: "JIMMY PowerWash HW8 Cordless Wet Dry Smart",
+  original: 34025.5,
+  before: 340925.,
 
 },
 {
   image: "https://img.gkbcdn.com/p/2021-10-28/36v-10-4ah-removable-battery-for-eleglide-f1-electric-bike-1635406527480._w280_p1_.jpg",
-    off: 30 + "%off",
-      detail: "JIMMY JV35 Handheld Anti-mite Vacuum Cleaner High",
+  off: 30 + "%off",
+  detail: "JIMMY JV35 Handheld Anti-mite Vacuum Cleaner High",
 
-        original: 8025.53,
-          before: 80295.5,
+  original: 8025.53,
+  before: 80295.5,
 },
 {
   image: "https://img.gkbcdn.com/p/2021-10-28/36v-12-5ah-removable-battery-for-eleglide-m1-plus---m1-electric-bike-1635405942861._w280_p1_.jpg",
-    off: 30 + "%off",
-      detail: "JIMMY H9 Pro Flexible Smart Handheld Cordless Vacuum",
-        original: 9025.53,
-          before: 90295.5,
+  off: 30 + "%off",
+  detail: "JIMMY H9 Pro Flexible Smart Handheld Cordless Vacuum",
+  original: 9025.53,
+  before: 90295.5,
 },]
 let data7 = [
   {
@@ -640,32 +640,32 @@ let data7 = [
     off: 20 + "%off",
     detail: "Tronsmart Element Mega Pro 60W Bluetooth 5.0 Speaker",
     original: 10254.5,
-  before: 102954
+    before: 102954
 
-},
-{
-  image: "https://img.gkbcdn.com/p/2021-10-12/tronsmart-splash-1-led-15w-bluetooth-speaker-1634038411944._w280_p1_.jpg",
+  },
+  {
+    image: "https://img.gkbcdn.com/p/2021-10-12/tronsmart-splash-1-led-15w-bluetooth-speaker-1634038411944._w280_p1_.jpg",
     off: 30 + "%off",
-      detail: "Tronsmart Splash 1 LED 15W Bluetooth Speaker IPX7",
-        original: 34025.5,
-          before: 340925., 
+    detail: "Tronsmart Splash 1 LED 15W Bluetooth Speaker IPX7",
+    original: 34025.5,
+    before: 340925.,
 
-},
-{
-  image: "https://img.gkbcdn.com/p/2020-12-09/Tronsmart-Apollo-Q10-ANC-Bluetooth-Headphones-Black-426941-0._w280_p1_.jpg",
+  },
+  {
+    image: "https://img.gkbcdn.com/p/2020-12-09/Tronsmart-Apollo-Q10-ANC-Bluetooth-Headphones-Black-426941-0._w280_p1_.jpg",
     off: 30 + "%off",
-      detail: "Tronsmart Apollo Q10 ANC Active Noise Cancelling good ",
+    detail: "Tronsmart Apollo Q10 ANC Active Noise Cancelling good ",
 
-        original: 8025.53,
-          before: 80295.5,
-},
-{
-  image: "https://img.gkbcdn.com/p/2020-01-09/Tronsmart-element-T6-plus-Upgrade-Black-895558-._w280_p1_.jpg",
+    original: 8025.53,
+    before: 80295.5,
+  },
+  {
+    image: "https://img.gkbcdn.com/p/2020-01-09/Tronsmart-element-T6-plus-Upgrade-Black-895558-._w280_p1_.jpg",
     off: 30 + "%off",
-      detail: "Tronsmart T6 Plus Upgraded Edition Bluetooth 5.0 40W sound ",
-        original: 9025.53,
-          before: 90295.5,
-}
+    detail: "Tronsmart T6 Plus Upgraded Edition Bluetooth 5.0 40W sound ",
+    original: 9025.53,
+    before: 90295.5,
+  }
 ]
 
 
@@ -748,3 +748,12 @@ function appending(data) {
   })
 }
 appending(data8)
+
+var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
+}
+

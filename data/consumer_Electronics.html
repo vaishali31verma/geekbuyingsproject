@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../prostyles/main.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/navbar.css">
 </head>
 <body>
+    <div id="top-navbar"></div>
     <div id="salepic">
         <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg" alt="">
     </div>
@@ -71,7 +74,7 @@
 
 
     </div>
-   
+    <div id="footer"></div>
 
       
 </body>
@@ -85,6 +88,23 @@
     let resp = await getData("./conElectronics.json");
     console.log("respfrommodule", resp);
     appendData(resp, main)
+    var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
+}
+var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
+}
+
     
 </script>
+
+<script type="module" src="../Brand/main.js"></script>
 <!-- <script src="consumer_Electronics.js"></script> -->

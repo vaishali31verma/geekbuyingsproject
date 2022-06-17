@@ -26,21 +26,22 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  width: 30px;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: rgb(33, 30, 30);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  left: -20px;
 }
 .prev{
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  width: 30px;
   margin-top: -22px;
   padding: 16px;
   color: rgb(21, 20, 20);
@@ -238,12 +239,12 @@ h3 {
   border: 0ch;
   height: 40px;
   margin-top: 160px;
-  left: 1200px;
+  left: 1250px;
 }
 
 .pre {
   position: absolute;
-  left: 30px;
+  left: 370px;
   margin-top: 160px;
   border: 0ch;
   width: 30px;
@@ -353,8 +354,14 @@ margin-top: 0%;
   margin-top: 0px;
   margin-left: 10px;
 
+
 }#outerdiv2{
   overflow: hidden;
+  
+}
+#star{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 #Showdata2::-webkit-scrollbar{
 display: none;
@@ -391,6 +398,10 @@ display: none;
   background-color: black;
   color: aliceblue;
 }
+.befored{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .fwd2:hover{
   background-color: black;
   color: aliceblue;
@@ -407,7 +418,7 @@ display: none;
   background-color: none;
   position: absolute;
   right: 10px;
-  bottom: -1750px;
+  bottom: -1850px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -415,7 +426,7 @@ display: none;
 }
 .pre2{
   position: absolute;
-  bottom: -1750px;
+  bottom: -1850px;
   background-color: none;
   width: 50px;
   height: 50px;
@@ -555,7 +566,7 @@ display: none;
   border: none; 
   position: absolute;
   right: 45px;
-  top: 4050px;
+  top: 4200px;
   
  
 }
@@ -567,7 +578,7 @@ display: none;
   border: none; 
   position: absolute;
   left: 45px;
-  top: 4050px;
+  top: 4200px;
   
 }
 .mySlides{
