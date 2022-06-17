@@ -22,6 +22,9 @@ const appendData = (data, main)=>{
     main.innerHTML = null ;
     data.forEach((ele)=>{
         let div = document.createElement("div");
+        div.addEventListener("click",function(){
+            localStorage.setItem("item",JSON.stringify(ele));
+        })
 
         let image1 = document.createElement("img");
         image1.src = ele.image;
