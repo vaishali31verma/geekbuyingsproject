@@ -77,4 +77,15 @@
 </body>
 </html>
 
-<script src="headphones.js"></script>
+<script type="module">
+     let main = document.getElementById("pgrid")
+
+import {getData, appendData} from "../fetchappend/fetchpages.js" 
+
+let resp = await getData("./headphone.json");
+ console.log("respfrommodule", resp);
+appendData(resp, main)
+
+
+</script>
+<!-- <script src="headphones.js"></script> -->

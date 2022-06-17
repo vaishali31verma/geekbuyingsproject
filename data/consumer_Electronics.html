@@ -77,6 +77,15 @@
       
 </body>
 </html>
-<script src="consumer_Electronics.js"></script>
 
+<script type="module">
+    let main = document.getElementById("pgrid");
+
+    import{getData, appendData} from "../fetchappend/fetchpages.js"
+
+    let resp = await getData("./conElectronics.json");
+    console.log("respfrommodule", resp);
+    appendData(resp, main)
+    
 </script>
+<!-- <script src="consumer_Electronics.js"></script> -->

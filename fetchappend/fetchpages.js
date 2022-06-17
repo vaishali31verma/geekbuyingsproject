@@ -5,7 +5,7 @@ const getData = async ( url )=>{
         let response = await fetch( url );
         // console.log( response );
         let data = await response.json();
-        data = data.Bluetooth_speaker ;
+        data = data.Electronics ;
         console.log("data", data);
         
         let htol=document.getElementById("")

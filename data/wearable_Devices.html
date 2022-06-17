@@ -76,4 +76,15 @@
 </body>
 </html>
 
-<script src="wearable_Devices.js"></script>
+<script type="module">
+    let main = document.getElementById("pgrid")
+
+    import {getData, appendData} from "../fetchappend/fetchpages.js"
+
+    let resp = await getData("./weaDevices.json");
+    console.log("respfrommodule", resp);
+    appendData(resp, main)
+
+</script>
+
+<!-- <script src="wearable_Devices.js"></script> -->

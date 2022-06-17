@@ -112,151 +112,151 @@ var watch = [
     },
    
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-10/LOKMAT-OCEAN-Bluetooth-Smartwatch-1-14-inch-TFT-Touch-Screen-Blue-496290-0._w280_.jpg",
-        detail: "LOKMAT OCEAN Bluetooth Smartwatch 1.14 inch TFT Touch Screen Heart Rate Blood Pressure Monitor 5 ATM Water-Resistant 170mAh Battery - Blue",
-        detail_url:
+        "detail": "LOKMAT OCEAN Bluetooth Smartwatch 1.14 inch TFT Touch Screen Heart Rate Blood Pressure Monitor 5 ATM Water-Resistant 170mAh Battery - Blue",
+        "detail_url":
           "https://www.geekbuying.com/item/LOKMAT-OCEAN-Bluetooth-Smartwatch-1-14-inch-TFT-Touch-Screen-Blue-496290.html",
-        original: 2119.31,
-        before: 2354.88,
+        "original": 2119.31,
+        "before": 2354.88,
       },
       
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-10/Zeblaze-Lily-Bluetooth-Smartwatch-1-1-inch-Touch-Screen-Gold-496303-0._w280_.jpg",
-        detail: "Zeblaze Lily Bluetooth Smartwatch 1.1 inch Touch Screen Heart Rate Blood Pressure Monitor IP68 Water-Resistant 200 mAh Battery 30 Days Standby Time - Gold",
-        detail_url:
+        "detail": "Zeblaze Lily Bluetooth Smartwatch 1.1 inch Touch Screen Heart Rate Blood Pressure Monitor IP68 Water-Resistant 200 mAh Battery 30 Days Standby Time - Gold",
+        "detail_url":
           "https://www.geekbuying.com/item/Zeblaze-Lily-Bluetooth-Smartwatch-1-1-inch-Touch-Screen-Gold-496303.html",
-        original: 3140.10,
-        before: 3454.19,
+        "original": 3140.10,
+        "before": 3454.19,
       },
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-11/Zeblaze-GTS-2-Bluetooth-Calling-Smart-watch-Black-496314-0._w280_.jpg",
-        detail: "Zeblaze GTS 2 1.69 Inch Bluetooth Calling Receive/Make Call Music Player Blood Pressure Smart Watch Black",
-        detail_url:
+        "detail": "Zeblaze GTS 2 1.69 Inch Bluetooth Calling Receive/Make Call Music Player Blood Pressure Smart Watch Black",
+        "detail_url":
           "https://www.geekbuying.com/item/Zeblaze-GTS-2-Bluetooth-Calling-Smart-Watch-Black-496314.html",
-        original: 2747.49,
-        before: 3140.10,
+        "original": 2747.49,
+        "before": 3140.10,
       },
       
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-21/COLMI-P8-Plus-1-69-inch-Smart-Watch-IP67-waterproof-black-496760-0._w280_.jpg",
-        detail: "COLMI P8 Plus 1.69 inch Smart Watch IP67 waterproof Heart Rate Blood Pressure Blood Oxygen Black",
-        detail_url:
+        "detail": "COLMI P8 Plus 1.69 inch Smart Watch IP67 waterproof Heart Rate Blood Pressure Blood Oxygen Black",
+        "detail_url":
           "https://www.geekbuying.com/item/COLMI-P8-Plus-1-69-inch-Smart-Watch-IP67-Waterproof-Black-496760.html",
-        original: 2747.49,
-        before: 3140.10,
+        "original": 2747.49,
+        "before": 3140.10,
       },
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-21/COLMI-SKY-8-Smartwatch-Black-496749-0._w280_.jpg",
-        detail: "COLMI SKY 8 Smartwatch Waterproof Dynamic Watch Face Lightweight Touch Screen Watch Sports and Health Monitor Black",
-        detail_url:
+        "detail": "COLMI SKY 8 Smartwatch Waterproof Dynamic Watch Face Lightweight Touch Screen Watch Sports and Health Monitor Black",
+        "detail_url":
           "https://www.geekbuying.com/item/COLMI-SKY-8-Smartwatch-Black-496749.html",
-        original: 2511.92,
-        before: 2747.49,
+        "original": 2511.92,
+        "before": 2747.49,
       },
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-19/LOKMAT-MK28-Bluetooth-Smartwatch-Blue-496735-0._w280_.jpg",
-        detail: "LOKMAT MK28 Smart Watch IP68 Waterproof Fitness Tracker Pedometer Reminder Bluetooth Smartwatch for iOS Android Blue",
-        detail_url:
+        "detail": "LOKMAT MK28 Smart Watch IP68 Waterproof Fitness Tracker Pedometer Reminder Bluetooth Smartwatch for iOS Android Blue",
+        "detail_url":
           "https://www.geekbuying.com/item/LOKMAT-MK28-Bluetooth-Smartwatch-Blue-496735.html",
-        original: 2119.31,
-        before: 2197.83,
+        "original": 2119.31,
+        "before": 2197.83,
       },
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-19/LOKMAT-Time-2-Sport-Smart-Watch-Black-496727-0._w280_.jpg",
-        detail: "LOKMAT Time 2 Smart Watch Blutooth Call Heart Rate Monitoring Sports Watch with Sleep Tracker for Android iOS Black",
-        detail_url:
+        "detail": "LOKMAT Time 2 Smart Watch Blutooth Call Heart Rate Monitoring Sports Watch with Sleep Tracker for Android iOS Black",
+        "detail_url":
           "https://www.geekbuying.com/item/LOKMAT-Time-2-Sport-Smart-Watch-Black-496727.html",
-        original: 3532.71,
-        before: 3768.28,
+        "original": 3532.71,
+        "before": 3768.28,
       },
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-10/Zeblaze-Beyond-GPS-Bluetooth-Smartwatch-1-78-inch-AMOLED-Screen-Black-496297-0._w280_.jpg",
-        detail: "Zeblaze Beyond GPS Bluetooth Smartwatch 1.78 inch AMOLED Screen Heart Rate Blood Pressure Monitor 5ATM Water-Resistant 40 Days Standby Time - Black",
-        detail_url:
+        "detail": "Zeblaze Beyond GPS Bluetooth Smartwatch 1.78 inch AMOLED Screen Heart Rate Blood Pressure Monitor 5ATM Water-Resistant 40 Days Standby Time - Black",
+        "detail_url":
           "https://www.geekbuying.com/item/Zeblaze-Beyond-GPS-Bluetooth-Smartwatch-1-78-inch-AMOLED-Screen-Black-496297.html",
-        original: 6280.98,
-        before: 6909.16,
+        "original": 6280.98,
+        "before": 6909.16,
       },
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-10/LOKMAT-ATTACK-Bluetooth-Smartwatch-1-28-inch-TFT-Touch-Screen-Black-496293-0._w280_.jpg",
-        detail: "LOKMAT ATTACK Bluetooth Smartwatch 1.28 inch TFT Touch Screen Heart Rate Blood Pressure Monitor IP68 Water-Resistant 25 Days Standby Time - Black",
-        detail_url:
+        "detail": "LOKMAT ATTACK Bluetooth Smartwatch 1.28 inch TFT Touch Screen Heart Rate Blood Pressure Monitor IP68 Water-Resistant 25 Days Standby Time - Black",
+        "detail_url":
           "https://www.geekbuying.com/item/LOKMAT-ATTACK-Bluetooth-Smartwatch-1-28-inch-TFT-Touch-Screen-Black-496293.html",
-        original: 2747.49,
-        before: 4082.36,
+        "original": 2747.49,
+        "before": 4082.36,
       },
       
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-10/LOKMAT-APPLLP-PRO-Android-10-4G-Network-1600mAH-SmartWatches-Black-496313-0._w280_.jpg",
-        detail: "LOKMAT APPLLP PRO 4+64GB Android 10 2.1' Touch Screen Rotating 13M Camera Wifi 4G Network 1600mAh SmartWatches Black",
-        detail_url:
+        "detail": "LOKMAT APPLLP PRO 4+64GB Android 10 2.1' Touch Screen Rotating 13M Camera Wifi 4G Network 1600mAh SmartWatches Black",
+        "detail_url":
           "https://www.geekbuying.com/item/LOKMAT-APPLLP-PRO-Android-10-4G-Network-1600mAH-SmartWatches-Black-496313.html",
-        original: 18844.52,
-        before: 19472.70,
+        "original": 18844.52,
+        "before": 19472.70,
       },
       
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-10/Zeblaze-Ares-Smartwatch-1-3-inch-IPS-Touch-Screen-Green-496309-0._w280_.jpg",
-        detail: "Zeblaze Ares Ultra-light Bluetooth Smartwatch 1.3 inch IPS Touch Screen Heart Rate Blood Pressure Monitor 30M Water-Resistant 170mAh Battery 15 Days Standby Time - Green",
-        detail_url:
+        "detail": "Zeblaze Ares Ultra-light Bluetooth Smartwatch 1.3 inch IPS Touch Screen Heart Rate Blood Pressure Monitor 30M Water-Resistant 170mAh Battery 15 Days Standby Time - Green",
+        "detail_url":
           "https://www.geekbuying.com/item/Zeblaze-Ares-Smartwatch-1-3-inch-IPS-Touch-Screen-Green-496309.html",
-        original: 2354.88,
-        before: 2590.44,
+        "original": 2354.88,
+        "before": 2590.44,
       },
       
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-21/Rogbid-Air-Smart-Watch-1-75---5ATM-Waterproof-Gray-496786-0._w280_.jpg",
-        detail: "Rogbid Air Smartwatch Men 1.75'' IPS Full-touch 4G 5MP Camera 4+128GB 5ATM Waterproof GPS+GLONASS Health Monitor-Gray",
-        detail_url:
+        "detail": "Rogbid Air Smartwatch Men 1.75'' IPS Full-touch 4G 5MP Camera 4+128GB 5ATM Waterproof GPS+GLONASS Health Monitor-Gray",
+        "detail_url":
           "https://www.geekbuying.com/item/Rogbid-Air-Smart-Watch-1-75---5ATM-Waterproof-Gray-496786.html",
-        original: 16881.47,
+        "original": 16881.47,
       },
       
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-21/COLMI-V23-Bluetooth-Smartwatch-Rose-Gold-496759-0._w280_.jpg",
-        detail: "COLMI V23 Smartwatch Full Touch Fitness Tracker IP67 Waterproof Blood Pressure Bluetooth Watch Rose Gold",
-        detail_url:
+        "detail": "COLMI V23 Smartwatch Full Touch Fitness Tracker IP67 Waterproof Blood Pressure Bluetooth Watch Rose Gold",
+        "detail_url":
           "https://www.geekbuying.com/item/COLMI-V23-Bluetooth-Smartwatch-Rose-Gold-496759.html",
-        original: 2904.53,
+        "original": 2904.53,
       },
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-21/COLMI-SKY-1-Plus-Smartwatch-Black-Yellow-496754-0._w280_.jpg",
-        detail: "COLMI SKY 1 Plus Smart Watch Men IP68 Waterproof Sleep Tracker Sport Fitness Bluetooth Smartwatch for Android iOS Phone",
-        detail_url:
+        "detail": "COLMI SKY 1 Plus Smart Watch Men IP68 Waterproof Sleep Tracker Sport Fitness Bluetooth Smartwatch for Android iOS Phone",
+        "detail_url":
           "https://www.geekbuying.com/item/COLMI-SKY-1-Plus-Smartwatch-Black-Yellow-496754.html",
-        original: 2354.88,
+        "original": 2354.88,
       },
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-21/COLMI-P28-Plus-Smartwatch-Gray-496748-0._w280_.jpg",
-        detail: "COLMI P28 Plus Smartwatch Upgraded Large Battery Fashion Sports and Health Monitor Watch Gray",
-        detail_url:
+        "detail": "COLMI P28 Plus Smartwatch Upgraded Large Battery Fashion Sports and Health Monitor Watch Gray",
+        "detail_url":
           "https://www.geekbuying.com/item/COLMI-P28-Plus-Smartwatch-Gray-496748.html",
-        original: 2668.97,
-        before: 3061.58,
+        "original": 2668.97,
+        "before": 3061.58,
       },
       {
-        image:
+        "image":
           "https://img.gkbcdn.com/p/2022-02-21/COLMI-P8-Mix-Smartwatch-White-496744-0._w280_.jpg",
-        detail: "COLMI P8 Mix Smartwatch Large Screen Fashion Sports and Health Monitor Watch White",
-        detail_url:
+        "detail": "COLMI P8 Mix Smartwatch Large Screen Fashion Sports and Health Monitor Watch White",
+        "detail_url":
           "https://www.geekbuying.com/item/COLMI-P8-Mix-Smartwatch-White-496744.html",
-        original: 2590.44,
-        before: 3140.10,
+        "original": 2590.44,
+        "before": 3140.10,
       },
 
    ];
