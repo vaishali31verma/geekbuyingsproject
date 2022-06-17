@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+#top_div_shipping>img{
+    width: 110%;
+    height: 90px;
+}
+#top_div_shipping>p{
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 170px;
+}
+#below_top_div_shipping{
+    background-color: rgb(247, 230, 230);
+    margin-left: 170px;
+    margin-top: 20px;
+    color: rgb(205, 109, 109);
+    font-size: 14px;
+    width: 80%;
+    height: 25px;
+}
+#below_top_div_shipping>p{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+#main_div_form{
+    height: 600px;
+    width: 80%;
+    border: 1px solid rgb(210, 202, 202);
+    margin-left: 170px;
+    border-radius: 10px;
+    margin-top: 30px;
+   padding-top: 20px;
+   padding-left: 100px;
+}
+span{
+    color: red;
+}
+input,select{
+    margin-left: 60px;
+    width: 300px;
+    height: 35px;
+    margin-top: 18px;
+    padding-left: 10px;
+    border-radius: 2px;
+    border: 1px solid rgb(184, 176, 176);
+}
+label{
+    color: grey;
+}
+#form>input:nth-child(8){
+   
+    margin-left: 97px;
+    padding-left: 15px;
+}
+#form>input:nth-child(11){
+    width: 500px;
+}
+#country{
+    margin-left: 25px;
+}
+#state{
+    margin-left: 32px;
+}
+#city{
+    margin-left: 108px;
+}
+#pincode{
+    margin-left: 27px;
+}
+#address{
+    margin-left: 82px;
+}
+#number{
+    margin-left: 33px;
+}
+#note{
+    font-size: 12px;
+}
+#notee{
+    font-size: 12px;
+}
+#submit{
+    width: 110px;
+    color: white;
+    background-color: rgb(58, 58, 238);
+    border: none;
+    border-radius: 5px;
+    margin-left: 220px;
+    margin-top: 40px;
+}
+#submit:hover{
+    cursor: pointer;
+    color:white;
+    background-color: rgb(247, 170, 170);
+
+}
+.divHead{
+    margin-left: 170px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
