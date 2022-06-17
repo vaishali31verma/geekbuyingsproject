@@ -1,10 +1,19 @@
     /* div{
         border: 1px solid red;
     } */
-    #navbar{
+    #navbar-top{
         width: 100%;
         border: 1px solid saddlebrown;
     }
+     #footer{
+        width: 80%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        max-width: fit-content;
+        border: 2px solid red;
+    } 
     img{
         width: 100%;
         height: 100%;
@@ -38,9 +47,9 @@
         width: 75px;
         height: 75px;
     }
-    p,h2,h4{
+    /* p,h2,h4{
         margin-left: 10px;
-    }
+    } */
 
     #actprice{
         margin-top: 25px;
@@ -57,9 +66,7 @@
         border-radius: 5px; 
         text-align: center;
     }
-    body{
-        font-family: sans-serif;
-    }
+    
     #addcart,#buynow{
         border-radius: 10px;
         font-size: 18px;

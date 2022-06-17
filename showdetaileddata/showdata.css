@@ -232,10 +232,10 @@
 
 .fwd {
     position: absolute;
-    top: 880px;
+    top: 990px;
     width: 60px;
     height: 60px;
-    left: 1500px;
+    left: 1230px;
     border: 0ch;
     border-radius: 50%;
 }
@@ -244,8 +244,8 @@
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 880px;
-    left: 70px;
+    top: 990px;
+    left: 35px;
     border: 0ch;
     border-radius: 50%;
 }

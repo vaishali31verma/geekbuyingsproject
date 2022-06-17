@@ -1,3 +1,8 @@
+import {navbar,footer} from "../navbar/navbar.js"
+document.getElementById("navbar-top").innerHTML = navbar()
+document.getElementById("footer").innerHTML = footer()
+
+
 let data = JSON.parse(localStorage.getItem("item"))
 
 let image = document.querySelector("#sideimg")
@@ -63,18 +68,18 @@ let appenddata = (data) => {
     });
 }
 appenddata(data8)
-
-
+document.getElementById("inc").addEventListener("click",inc)
+document.getElementById("dec").addEventListener("click",dec)
 
 var c =1
-var inc=()=>{
+function inc(){
     
     c++;
     document.getElementById("count").innerText=c;
    
     
     }
-var dec=()=>{
+function dec(){
     if(c==1){
         document.getElementById("count").innerText=c;
     }
@@ -116,6 +121,13 @@ let addcart = (data)=>{
 }
   
 
+var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
+}
 
 
 

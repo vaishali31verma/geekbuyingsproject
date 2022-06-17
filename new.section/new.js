@@ -401,3 +401,11 @@ function sortLtH() {
   container.innerHTML = null;
   display(data);
 }
+}
+var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
+}

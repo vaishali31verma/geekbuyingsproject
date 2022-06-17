@@ -6,67 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    body{
-        font-family: sans-serif;
-    }
-    h1{
-        text-align: center;
-    }
-    #container>div>img{
-    width: 100%;
-    height: 60%;
-    border-bottom: 0.5px solid black;
-}
-#container{
-    display: grid;
-    width: 90%;
-    margin: auto;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5,500px);
-    gap: 20px;
-}
-#container>div:hover{
-    cursor: pointer;
-    background-color: rgb(185, 200, 200);
-}
-#container>div{
-    /* border: 1px solid saddlebrown; */
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
-}
-p,h3{
-    margin-left: 2%;
-    line-height: 16px;
-}
-#original{
-    text-decoration: line-through;
-}
-#ratings{
-    display: flex;
-    /* border: 1px solid red; */
-
-}
-#ratings img{
-    width: 75px;
-    height: 30px;
-    margin-top: 2.8%;
-}
-</style>
+<link rel="stylesheet" href="../geekbuyingsproject/style/bestselling.css">
+<link rel="stylesheet" href="../geekbuyingsproject/style/navbar.css">
+<link rel="stylesheet" href="../geekbuyingsproject/style/footer.css">
 <body>
-    <div id="navbar">
+    <div id="navbar-top">
 
     </div>
     <h1>Bestselling</h1>
     <div id="container"></div>
+    <div id="footer"></div>
 </body>
 </html>
-<script>
+<script type="module">
     
+  import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
+ document.getElementById("navbar-top").innerHTML = navbar()
+ document.getElementById("footer").innerHTML = footer()
 
 
-    data=[
+ let   data=[
 
     {   
             image:'https://img.gkbcdn.com/p/2018-11-22/netac-n600s-1tb-ssd-2-5-inch-solid-state-drive-blue-1571991121689._w280_p1_.jpg',
@@ -252,6 +211,13 @@ for(let i=0;i<sdiv.length;i++){
     sdiv[i].addEventListener("click",function(){
         window.location.href=`p${i}.html`
     })
+}
+var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
 }
 
 </script>

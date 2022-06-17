@@ -62,3 +62,10 @@ document.getElementById("pic").append(div)
 })
 
 
+var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
+}

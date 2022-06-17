@@ -144,4 +144,11 @@
     color: rgb(67, 64, 64);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#footer{
+    margin-top: 500px;
+    
+}

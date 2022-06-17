@@ -8,6 +8,18 @@
     /* margin-left: -12px; */
     margin-top: -12px;
 } 
+#home{
+    /* border: 2px solid red; */
+    width: 50px;
+    height: 50px;
+   
+}
+#india{
+    font-size: 15px;
+   
+    height: 20px;
+    
+}
 #second_dropbtn_btn {
 background-color: rgb(20,118,254);
 color: white;
@@ -124,7 +136,7 @@ font-size: 13px;
     width: 18%;
     border: 1px solid transparent;
     margin-right: 2%;
-}#top_navbar_second_img>img{
+}#top_navbar_second_img>a>img{
     width: 100%;
 }
 #top_navbar_second_search{
@@ -166,9 +178,11 @@ font-size: 13px;
     font-size: 12.5px;
     margin-left: 5px;
 }
-#top_navbar_second_user>img{
+#top_navbar_second_user>a>img{
     border-radius: 50%;
+    width: 50px;
 }
+
 #top_navbar_second_cart{
     width: 9%;border: 1px solid transparent;
     margin-left: 1%;
@@ -342,4 +356,8 @@ font-size: 13px;
 .newxx{
    color: #ddd;
    text-decoration: none;
+}
+.option{
+    text-decoration: none;
+    color: gray;
 }

@@ -8,10 +8,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./showdata.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/footer.css">
 </head>
 
 <body>
-    <div id="navbar"></div>
+    <div id="navbar-top"></div>
     <div id="outermost">
         <div id="sideimg">
 
@@ -40,9 +42,9 @@
              <div>
                 <p>QTY :</p>
                 <div id="qty">
-                    <p onclick="dec()">-</p>
+                    <p id="dec">-</p>
                     <p id="count" >1</p>
-                    <p onclick="inc()">+</p>
+                    <p id="inc">+</p>
                 </div>
              </div>
              <div id="shipping">
@@ -98,8 +100,8 @@
     </div>
     <button class="pre"><<</button>
     <button class="fwd">>></button>
-    
+    <div id="footer"></div>
 </body>
 
 </html>
-<script src="./showdata.js"></script>
+<script src="./showdata.js" type="module"></script>
