@@ -1,0 +1,40 @@
+{
+    "Electronics" : [
+        {
+            "image":"https://img.gkbcdn.com/p/2019-03-18/tronsmart-element-t6-plus-bluetooth-speaker-black-1574132869322._w280_p1_.jpg",
+            "url":"https://www.geekbuying.com/deals?id=414905",
+            "detail" : "Tronsmart element t6 plus bluetooth speaker",
+            "original":4710.54,
+            "before":6280.98,
+            "star": "🌟🌟🌟🌟",
+            "discount":"25% OFF"
+            },
+            {
+            "image":"https://img.gkbcdn.com/p/2019-08-27/tronsmart-t2-plus-20w--bluetooth-5-0-speaker-tws-1571994588089._w280_p1_.jpg",
+            "url":"https://www.geekbuying.com/deals?id=419179",
+            "detail" : "Tronsmart t2 plus 20w bluetooth speaker",
+            "original":2590.44,
+            "before":3297.14,
+            "star": "🌟🌟🌟🌟🌟",
+            "discount":"21% OFF"
+            },
+            
+            {
+            "image":"https://img.gkbcdn.com/p/2019-01-31/tronsmart-element-mega-bluetooth-speaker-black-1571991584812._w280_p1_.jpg",
+            "url":"https://www.geekbuying.com/deals?id=388375",
+            "detail":"Tronsmart element mega bluetooth speaker",
+            "original":3454.19,
+            "before":5260.20,
+            "star": "🌟🌟🌟🌟",
+            "discount":"34% OFF"
+            },
+            {
+              "image":"https://img.gkbcdn.com/p/2017-07-26/xiaomi-wifi-amplifier-pro-black-1574132393616._w280_.jpg",
+              "detail":"Xiaomi wifi amplifier pro black speaker",
+              "original": 1569.66,
+              "before": 2119.31,
+              "star": "🌟🌟🌟🌟🌟",
+              "discount": "26% OFF"
+            }
+    ]
+}

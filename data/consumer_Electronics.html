@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../prostyles/main.css">
+</head>
+<body>
+    <div id="salepic">
+        <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg" alt="">
+    </div>
+    <div id="bigboxx">
+        <div id="leftcon">
+            <h2><b>Consumer Electronics</b></h2>
+            <a href="consumer_Electronics.html" class="anc"><h3>Consumer Electronics</h3></a>
+            <a href="wearable_Devices.html" class="anc"><h3>Wearable Devices</h3></a>
+            <a href="bluetooth_speaker.html" class="anc"><h3>Blutooth Speakers</h3></a>
+            <a href="consumer_Electronics.html" class="anc"><h3>Professional Instruments</h3></a>
+            <a href="headphones.html" class="anc"><h3>Headphones & Earphones</h3></a>
+            <a href="bluetooth_speaker.html" class="anc"><h3>Bluetooth & NFC Devices</h3></a>
+            <a href="consumer_Electronics.html" class="anc"><h3>Power Banks & charger</h3></a>
+            <a href="consumer_Electronics.html" class="anc"><h3>Memory Card</h3></a>
+            <!-- <a href="" class="anc"><h3>Virtual Reality</h3></a>
+            <a href="" class="anc"><h3>Projectors</h3></a>
+            <a href="" class="anc"><h3>Cameras & Optics</h3></a>
+            <a href="" class="anc"><h3>Video Games & Accessories</h3></a>
+            <a href="" class="anc"><h3>Industrial & Scintific</h3></a>
+            <a href="" class="anc"><h3>Apliances</h3></a> -->
+        </div>
+        <div class="SSlider">
+            <div class="slidenxt">
+                <img src="https://img.gkbcdn.com/s3/c/2205/BANG-62904bf72b40c91cb019ade1.png" alt="">
+            </div>
+            
+        </div>
+       <div id="forFilter">
+        <div>
+            <img src="https://img.gkbcdn.com/s3/b/Logo/tronsmart.jpg?v=788944783" alt="">
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/s3/b/xiaomi.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/s3/b/Logo/huawei.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/s3/b/Logo/gamesir.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/s3/b/razer-6TQneIik.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/s3/b/Logo/oneplus.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/s3/b/Logo/kingston.jpg" alt="">
+        </div>
+       </div>
+       <div id="doFilter">
+        <img src="https://img.gkbcdn.com/s3/c/2205/crealityender3s1-62904b9d2b40c91cb019ade0.png" alt="">
+              <!-- <input type="text"> -->
+              <!-- <option value=""></option> -->
+       </div>
+             
+
+       <div id="pgrid">
+
+       </div>
+
+
+    </div>
+   
+
+      
+</body>
+</html>
+
+<script type="module">
+    let main = document.getElementById("pgrid");
+
+    import{getData, appendData} from "../fetchappend/fetchpages.js"
+
+    let resp = await getData("./conElectronics.json");
+    console.log("respfrommodule", resp);
+    appendData(resp, main)
+    
+</script>
+<!-- <script src="consumer_Electronics.js"></script> -->
