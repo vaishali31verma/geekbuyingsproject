@@ -16,5 +16,6 @@ submit=()=>{
     console.log(obj1)
     
     localStorage.setItem("user",JSON.stringify(obj1))
-    window.location.reload()
+    window.location.href="../index.html"
     }
+   

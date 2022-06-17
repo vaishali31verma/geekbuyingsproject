@@ -339,8 +339,13 @@ box.addEventListener("click",function(){
 
 function catch1(elem){
     localStorage.setItem("item",JSON.stringify(elem))
-    window.location.href = "../showdetaileddata/showdata.html"
-} 
+// <<<<<<< link
+//     window.location.href = "../showdetaileddata/showdata.html"
+// } 
+// =======
+//     window.location.href='../showdetaileddata/showdata.html'
+// }
+// >>>>>>> main
 
 function seven() {
   let data = JSON.parse(localStorage.getItem("product"));
