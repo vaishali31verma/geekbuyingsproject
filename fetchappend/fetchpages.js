@@ -30,8 +30,9 @@ const appendData = (data, main)=>{
         let detail1 = document.createElement("p");
         detail1.innerText = ele.detail;
 
-        let price = document.createElement("p");
+        let price = document.createElement("h4");
         price.innerText ="₹"+ele.original;
+        price.setAttribute("class","pr")
         
         
         let beforePrice=document.createElement("p");
@@ -45,6 +46,7 @@ const appendData = (data, main)=>{
 
         let starrr=document.createElement("p");
         starrr.innerText=ele.star;
+        starrr.setAttribute("class", "str");
 
 
 

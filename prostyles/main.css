@@ -6,54 +6,69 @@
     margin-top: 30px;
 }
 #salepic{
-    height: 120px;
-    width: 80%;
-    border: 1px solid rgb(86, 6, 6);
+    height: 110px;
+    border-radius: 10px;
+    width: 85%;
+    /* border: 1px solid rgb(86, 6, 6); */
     margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 #salepic>img{
     height: 100%;
     width: 100%;
+    border-radius: 10px;
 }
 #leftcon{
     height: 630px;
     width: 250px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 15px;
+    line-height: 10px;
+    text-underline-offset: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
     /* border: 1px solid rgb(72, 193, 61); */
     /* margin-top: 20px; */
     /* margin-left: 10%; */
     text-align: justify;
 }
 #leftcon>a:hover{
-    background-color: rgb(131, 190, 190);
+    color: rgb(34, 95, 6);
 }
 .slidenxt{
    margin-left: 25%;
     margin-bottom: 500px;
-    height: 350px;
+    border-radius: 10px;
+    height: 200px;
     width: 75%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     /* border: 1px solid rgb(76, 20, 197); */
-    margin-top: -610px;
+    margin-top: -630px;
 }
 .slidenxt>img{
     height: 100%;
     width: 100%;
+    border-radius: 10px;
 }
 #forFilter{
     height: 70px;
     width: 75%;
     /* border: 1px solid rgb(214, 17, 136); */
     margin-left: 25%;
-    margin-top: -470px;
+    margin-top: -490px;
     display: flex;
     justify-content: space-evenly;
 }
 #forFilter>div{
+
     height: 50px;
     width: 100px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     /* border: 1px solid black; */
     border-radius: 10px;
+
+}
+#forFilter>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 #forFilter>div>img{
     height: 100%;
@@ -63,13 +78,18 @@
 #doFilter{
     height: 130px;
     width: 75%;
-    border: 1px solid rgb(14, 147, 196);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    /* border: 1px solid rgb(14, 147, 196); */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
     margin-left: 25%;
-    margin-top: 10px;
+    border-radius: 10px;
+    margin-top: 0px;
 }
 #doFilter>img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 #pgrid{
     width: 100%;
@@ -86,6 +106,13 @@
     border: 0.5px solid rgb(207, 204, 204);
     border-radius: 15px;
     gap:10px;
+    height: 300px;
+    /* line-height: 10px; */
+    font-size: 7px;
+}
+#pgrid>div>img{
+    width: 100%;
+    height: 60%;
 }
 #pgrid>div:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -93,12 +120,21 @@
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 .linetrough{
-    font-size: 14px;
+    line-height: 2px;
+    font-size: 9px;
     text-decoration: line-through;
     color: red;
 }
+.pr{
+    font-size: 15px;
+    line-height: 5px;
+}
 .discounted{
     color: grey;
-    font-size: 10px;
+    font-size: 9px;
+    line-height: 5px;
+}
+.str{
+    font-size: 12px;
 }
 
