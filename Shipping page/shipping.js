@@ -1,6 +1,6 @@
 
 
-let products = JSON.parse(localStorage.getItem("products"));
+let products = JSON.parse(localStorage.getItem("addcart"));
 
  let pro = document.getElementById("productList")
 
@@ -15,13 +15,13 @@ let products = JSON.parse(localStorage.getItem("products"));
         img.src = el.image;
 
         let des = document.createElement("p");
-        des.innerText=el.type;
+        des.innerText=el.detail;
 
         let cou = document.createElement("p");
-        cou.innerText = "X"+el.desc;
+        cou.innerText = "X"+el.count;
 
         let price = document.createElement("p");
-        price.innerText ="₹ "+el.price*el.desc;
+        price.innerText ="₹ "+el.original*el.count;
 
         div.append(img,des,cou,price);
         pro.append(div)
