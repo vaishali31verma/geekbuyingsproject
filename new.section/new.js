@@ -1,8 +1,8 @@
-import {navbar,footer} from "../navbar/navbar.js"
-document.getElementById("top-navbar").innerHTML=navbar()
-document.getElementById("footer").innerHTML = footer()
+// import {navbar,footer} from "../navbar/navbar.js"
+// document.getElementById("top-navbar").innerHTML=navbar()
+// document.getElementById("footer").innerHTML = footer()
 
-let product = [
+ product = [
   {
     image:
       "https://img.gkbcdn.com/p/2022-05-30/SCULPFUN-30L-Min-Air-Pump-Compressor-EU-Plug-501434-0._w280_p1_.jpg",
@@ -323,7 +323,7 @@ function display(data) {
 
     rates.innerText = "🤍" + elem.rating;
     price.innerText = " ₹" + elem.original;
-    strikedprice.innerText = elem.before;
+    strikedprice.innerText =" ₹"+ elem.before;
     boxp.append(rates, p);
     box.append(avatar, detail, pricebox);
     document.querySelector("#container").append(box);
@@ -339,14 +339,8 @@ box.addEventListener("click",function(){
 
 function catch1(elem){
     localStorage.setItem("item",JSON.stringify(elem))
-// <<<<<<< link
-//     window.location.href = "../showdetaileddata/showdata.html"
-// } 
-// =======
-//     window.location.href='../showdetaileddata/showdata.html'
-// }
-// >>>>>>> main
-
+window.location.href="../showdetaileddata/showdata.html"
+}
 function seven() {
   let data = JSON.parse(localStorage.getItem("product"));
   let p = data.filter(function (el) {
@@ -401,7 +395,7 @@ function sortLtH() {
   container.innerHTML = null;
   display(data);
 }
-}
+
 var user = JSON.parse(localStorage.getItem("user"))
 if(user.name ==null){
   document.getElementById("signin").innerText = "signin"
