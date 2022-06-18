@@ -7,12 +7,15 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="commonstyles.css">
+<link rel="stylesheet" href="../geekbuyingsproject/style/navbar.css">
 <body>
-    <div id="navbar"></div>
+    <div id="navbar-top">
+
+    </div>
     <div id="banner">
         <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg">
     </div>
-    <div id="main">
+    <div id="mainalpha">
     <div id="prodimg">
     </div>
     <div id="details">
@@ -25,21 +28,24 @@
     <div class="extrap"><a href="#reviews"><h3>Reviews</h3></a></div>
     <div class="extrap">    <a href="#QnA"><h3>QnA</h3></a></div>
 </div>
-<h2>Highlights</h2>
+<h2 class="highlights">Highlights</h2>
 <div id="description"></div>
-<h2>Customer Reviews</h2>
+<h2 class="highlights">Customer Reviews</h2>
 <div id="reviews">
     User 1:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
     User 2:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
     User 3:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br>
 </div>
-<h2>Questions & Answers</h2>
+<h2 class="highlights">Questions & Answers</h2>
 <div id="QnA">
     <p>Temporarily no Discussion</p>
 </div>    
 </body>
 </html>
 <script type="module">
+
+    import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
+     document.getElementById("navbar-top").innerHTML = navbar()
     let images=[
         "https://ae01.alicdn.com/kf/HTB12BduV4YaK1RjSZFnq6y80pXaC/STmagic-SPT31-256GB-512GB-1TB-Mini-Portable-M-2-SSD-USB3-1-External-Solid-State-Drive.jpg_Q90.jpg_.webp",
         'https://ae01.alicdn.com/kf/HTB1V8dpV7voK1RjSZFNq6AxMVXau/STmagic-SPT31-256GB-512GB-1TB-Mini-Portable-M-2-SSD-USB3-1-External-Solid-State-Drive.jpg_Q90.jpg_.webp',
@@ -50,11 +56,11 @@
     console.log(items)
     let obj={
         image:'https://img.gkbcdn.com/p/2019-02-20/stmagic-spt31-512g-mini-portable-m-2-ssd-gray-1571995742585._w280_p1_.jpg',
-        name:'STmagic SPT31 512GB',
+        detail:'STmagic SPT31 512GB',
         fullname:'STmagic SPT31 512GB Mini Portable M.2 SSD USB3.1 Solid State Drive Read Speed 500MB/s - Gray',
         brand:"STmagic",
-        price:'6038',
-        originalprice:"7407",
+        original:'6038',
+        beforeprice:"7407",
         discpercent:"18",
         count:1,
         rating:'4.8 48 Reviews ',
@@ -132,8 +138,8 @@ High-speed transmission, built-in SATA3 standard protocol, M.2 brand solid state
 
     let price=document.createElement('div');
     price.id="price"
-    price.innerHTML=`<p id="actprice">₹${obj.price}</p> 
-    <p id="origprice"><s>₹${obj.originalprice}</s></p>
+    price.innerHTML=`<p id="actprice">₹${obj.original}</p> 
+    <p id="origprice">₹<s>${obj.beforeprice}</s></p>
     <p id="discpercent">${obj.discpercent}% OFF</p>
     `
 
@@ -213,7 +219,7 @@ High-speed transmission, built-in SATA3 standard protocol, M.2 brand solid state
     descrip(description,obj)
 
     function buy(){
-    if(items.length==0||items[items.length-1].name!==obj.name)
+    if(items.length==0||items[items.length-1].detail!==obj.detail)
     items.push(obj)
     else
     items[items.length-1]=obj;
@@ -221,4 +227,12 @@ High-speed transmission, built-in SATA3 standard protocol, M.2 brand solid state
     console.log("yippee")
 }
 
+    //to check and display name in navbar
+    var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
+}
 </script>

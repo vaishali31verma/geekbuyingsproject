@@ -7,12 +7,15 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="commonstyles.css">
+<link rel="stylesheet" href="../geekbuyingsproject/style/navbar.css">
 <body>
-    <div id="navbar"></div>
+    <div id="navbar-top">
+
+    </div>
     <div id="banner">
         <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg">
     </div>
-    <div id="main">
+    <div id="mainalpha">
     <div id="prodimg">
     </div>
     <div id="details">
@@ -25,21 +28,25 @@
     <div class="extrap"><a href="#reviews"><h3>Reviews</h3></a></div>
     <div class="extrap">    <a href="#QnA"><h3>QnA</h3></a></div>
 </div>
-<h2>Highlights</h2>
+<h2 class="highlights">Highlights</h2>
 <div id="description"></div>
-<h2>Customer Reviews</h2>
+<h2 class="highlights">Customer Reviews</h2>
 <div id="reviews">
     User 1:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
     User 2:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
     User 3:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br>
 </div>
-<h2>Questions & Answers</h2>
+<h2 class="highlights">Questions & Answers</h2>
 <div id="QnA">
     <p>Temporarily no Discussion</p>
 </div>    
 </body>
 </html>
 <script type="module">
+
+    import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
+     document.getElementById("navbar-top").innerHTML = navbar();
+      //------------------------------------------------------------------------//
     let images=['https://sc04.alicdn.com/kf/Hcba7b9293ea74c4aad4abc4d4c2a1c9aA.jpg',
     'https://sc04.alicdn.com/kf/H210da676b7ce435fbee1bb239bf9ca30b.jpg',
     'https://sc04.alicdn.com/kf/H8bb220757c0c499e8d5ca4c8661cdcadM.jpg'
@@ -48,11 +55,11 @@
     console.log(items)
     let obj={
         image:'https://img.gkbcdn.com/p/2017-11-25/mx3-l-m-backlight-voice-input-2-4ghz-wireless-air-mouse-1571989128244._w280_p1_.jpg',
-        name:'JJRC X12 AURORA 4K 5G WIFI 3KM',
+        detail:'JJRC X12 AURORA 4K 5G WIFI 3KM',
         fullname:'JJRC X12 AURORA 4K 5G WIFI 3KM FPV GPS Foldable RC Drone With 3Axis Gimbal 50X Digital Zoom Ultrasonic Positioning RTF - White Two Batteries with Bag',
         brand:"JJRC",
-        price:'18520',
-        originalprice:"26573",
+        original:'18520',
+        beforeprice:"26573",
         discpercent:"30",
         count:1,
         rating:'4.95 57 Reviews ',
@@ -158,8 +165,8 @@ The bag provides secure storage for your drone and all other parts so you can ca
 
     let price=document.createElement('div');
     price.id="price"
-    price.innerHTML=`<p id="actprice">₹${obj.price}</p> 
-    <p id="origprice"><s>₹${obj.originalprice}</s></p>
+    price.innerHTML=`<p id="actprice">₹${obj.original}</p> 
+    <p id="origprice">₹<s>${obj.beforeprice}</s></p>
     <p id="discpercent">${obj.discpercent}% OFF</p>
     `
 
@@ -239,12 +246,19 @@ The bag provides secure storage for your drone and all other parts so you can ca
     descrip(description,obj)
 
     function buy(){
-    if(items.length==0||items[items.length-1].name!==obj.name)
+    if(items.length==0||items[items.length-1].detail!==obj.detail)
     items.push(obj)
     else
     items[items.length-1]=obj;
     localStorage.setItem("cartitems",JSON.stringify(items))
     console.log("yippee")
 }
-
+    //to check and display name in navbar
+    var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
+}
 </script>

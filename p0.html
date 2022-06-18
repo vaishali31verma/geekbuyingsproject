@@ -7,12 +7,15 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="commonstyles.css">
+<link rel="stylesheet" href="../geekbuyingsproject/style/navbar.css">
 <body>
-    <div id="navbar"></div>
+    <div id="navbar-top">
+
+    </div>
     <div id="banner">
         <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg">
     </div>
-    <div id="main">
+    <div id="mainalpha">
     <div id="prodimg">
     </div>
     <div id="details">
@@ -32,21 +35,24 @@
     <div class="extrap"><a href="#reviews"><h3>Reviews</h3></a></div>
     <div class="extrap">    <a href="#QnA"><h3>QnA</h3></a></div>
 </div>
-<h2>Highlights</h2>
+<h2 class="highlights">Highlights</h2>
 <div id="description"></div>
-<h2>Customer Reviews</h2>
+<h2 class="highlights">Customer Reviews</h2>
 <div id="reviews">
     User 1:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
     User 2:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
     User 3:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br>
 </div>
-<h2>Questions & Answers</h2>
+<h2 class="highlights">Questions & Answers</h2>
 <div id="QnA">
     <p>Temporarily no Discussion</p>
 </div>    
 </body>
 </html>
-<script>
+<script type="module">
+
+import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
+ document.getElementById("navbar-top").innerHTML = navbar()
     let images=[
     "https://img203.yun300.cn/repository/image/fe39c25e-28ab-4eff-bf89-8e9e2d164df9.jpg?tenantId=263312&viewType=1",
     'https://img203.yun300.cn/repository/image/411173d2-a16e-4c62-ac2b-47d22a0df44f.jpg?tenantId=263312&viewType=1',
@@ -57,10 +63,10 @@
     let obj={
         image:'https://img.gkbcdn.com/p/2018-11-22/netac-n600s-1tb-ssd-2-5-inch-solid-state-drive-blue-1571991121689._w280_p1_.jpg',
         fullname:'Netac N600S 1TB SSD 2.5 Inch Solid State Drive SATA3 Interface Read Speed 500MB/s - Blue',
-        name:"Netac N600S 1TB SSD 2.5 Inch Solid State Drive",
+        detail:"Netac N600S 1TB SSD 2.5 Inch Solid State Drive",
         brand:"Netac",
-        price:'11272',
-        originalprice:"13044",
+        original:'11272',
+        beforeprice:"13044",
         discpercent:"14",
         count:1,
         rating:'4.86 27 Reviews ',
@@ -143,8 +149,8 @@ No sensitive machine parts, effective vibration resistance, quiet operation, and
 
     let price=document.createElement('div');
     price.id="price"
-    price.innerHTML=`<h2 id="actprice">₹${obj.price}</h2> 
-    <p id="origprice"><s>₹${obj.originalprice}</s></p>
+    price.innerHTML=`<h2 id="actprice">₹${obj.original}</h2> 
+    <p id="origprice"><s>₹${obj.beforeprice}</s></p>
     <p id="discpercent">${obj.discpercent}% OFF</p>
     `
 
@@ -254,7 +260,7 @@ No sensitive machine parts, effective vibration resistance, quiet operation, and
     description.append(desc1,descimg)
 
     function buy(){
-        if(items.length==0||items[items.length-1].name!==obj.name)
+        if(items.length==0||items[items.length-1].detail!==obj.detail)
         items.push(obj)
         else
         items[items.length-1]=obj;
@@ -262,4 +268,12 @@ No sensitive machine parts, effective vibration resistance, quiet operation, and
         // window.location.href=""
     }
 
+    //to check and display name in navbar
+    var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
+}
 </script>

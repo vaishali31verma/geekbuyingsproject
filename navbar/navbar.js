@@ -69,7 +69,7 @@ function navbar() {
             <div id="home">
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="">
             
-            <p id="india">  INR  </p>
+            <p id="india">  INDIA  </p>
             <div id="test">
             <div id="shipToBox">
                 <h5>Select Regional settings</h5>

@@ -16,8 +16,8 @@
 }
 #india{
     font-size: 15px;
-   
     height: 20px;
+    margin-left: 10px;
     
 }
 #second_dropbtn_btn {
@@ -91,6 +91,8 @@ font-size: 13px;
 #main{
     width: 85%;
     margin: auto;
+    font-family: sans-serif;
+    color: white;
 }
 #qr_code_div{
     display: flex;
@@ -229,6 +231,7 @@ font-size: 13px;
 #top_navbar_last{
     display: flex;
    margin-top: 30px;
+   color:white
   /* position: relative; */
   
 }

@@ -7,12 +7,15 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="commonstyles.css">
+<link rel="stylesheet" href="../geekbuyingsproject/style/navbar.css">
 <body>
-    <div id="navbar"></div>
+    <div id="navbar-top">
+
+    </div>
     <div id="banner">
         <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg">
     </div>
-    <div id="main">
+    <div id="mainalpha">
     <div id="prodimg">
     </div>
     <div id="details">
@@ -25,21 +28,25 @@
     <div class="extrap"><a href="#reviews"><h3>Reviews</h3></a></div>
     <div class="extrap">    <a href="#QnA"><h3>QnA</h3></a></div>
 </div>
-<h2>Highlights</h2>
+<h2 class="highlights">Highlights</h2>
 <div id="description"></div>
-<h2>Customer Reviews</h2>
+<h2 class="highlights">Customer Reviews</h2>
 <div id="reviews">
     User 1:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
     User 2:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br><br><hr>
     User 3:     &emsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat magnam maxime vero perspiciatis quod, fuga cum vel dolores, ex ipsa! Adipisci quis cumque impedit, enim necessitatibus reiciendis. Maiores, autem.<br>
 </div>
-<h2>Questions & Answers</h2>
+<h2 class="highlights">Questions & Answers</h2>
 <div id="QnA">
     <p>Temporarily no Discussion</p>
 </div>    
 </body>
 </html>
 <script type="module">
+
+    import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
+     document.getElementById("navbar-top").innerHTML = navbar()
+      //------------------------------------------------------------------------//
 let images=['https://m.media-amazon.com/images/I/61s7HIvOAsL._SX679_.jpg',
     'https://m.media-amazon.com/images/I/61VRhutSuFL._SX679_.jpg',
     'https://m.media-amazon.com/images/I/61i9i1A-L1L._SX679_.jpg'
@@ -48,11 +55,11 @@ let images=['https://m.media-amazon.com/images/I/61s7HIvOAsL._SX679_.jpg',
     console.log(items)
     let obj={
         image:'https://img.gkbcdn.com/p/2017-07-26/xiaomi-wifi-amplifier-pro-black-1574132393616._w280_p1_.jpg',
-        name:'Xiaomi WiFi Amplifier Pro 2X2 External Antenna 300Mbps',
+        detail:'Xiaomi WiFi Amplifier Pro 2X2 External Antenna 300Mbps',
         fullname:'Xiaomi WiFi Amplifier Pro 2X2 External Antenna 300Mbps Support 64 Devices Simultaneous Link - Black',
         brand:"Xiamomi",
-        price:'1609',
-        originalprice:"2173",
+        original:'1609',
+        beforeprice:"2173",
         discpercent:"26",
         count:1,
         rating:'4.99 120 Reviews ',
@@ -138,8 +145,8 @@ Firmware upgrades automatically in spare time.
 
     let price=document.createElement('div');
     price.id="price"
-    price.innerHTML=`<p id="actprice">₹${obj.price}</p> 
-    <p id="origprice"><s>₹${obj.originalprice}</s></p>
+    price.innerHTML=`<p id="actprice">₹${obj.original}</p> 
+    <p id="origprice">₹<s>${obj.beforeprice}</s></p>
     <p id="discpercent">${obj.discpercent}% OFF</p>
     `
 
@@ -219,12 +226,19 @@ Firmware upgrades automatically in spare time.
     descrip(description,obj)
 
     function buy(){
-    if(items.length==0||items[items.length-1].name!==obj.name)
+    if(items.length==0||items[items.length-1].detail!==obj.detail)
     items.push(obj)
     else
     items[items.length-1]=obj;
     localStorage.setItem("cartitems",JSON.stringify(items))
     console.log("yippee")
 }
-
+    //to check and display name in navbar
+    var user = JSON.parse(localStorage.getItem("user"))
+if(user.name ==null){
+  document.getElementById("signin").innerText = "signin"
+}
+else{
+  document.getElementById("signin").innerText = user.name
+}
 </script>
