@@ -248,8 +248,16 @@ It carries an in-built power bank that can charge your mobile devices.
     else
     items[items.length-1]=obj;
     localStorage.setItem("addcart",JSON.stringify(items))
-    console.log("yippee")
+    
+    document.getElementById("noofpro").innerText=items.length;
+        alert("Product added successfully")
 }
+
+//to redirect to cart page
+bt2.addEventListener("click",()=>{
+        window.location.href="/geekbuyingsproject/cart/cart.html"
+    })
+
     //to check and display name in navbar
     var user = JSON.parse(localStorage.getItem("user"))
 if(user.name ==null){
@@ -258,4 +266,5 @@ if(user.name ==null){
 else{
   document.getElementById("signin").innerText = user.name
 }
+document.getElementById("noofpro").innerText = items.length
 </script>

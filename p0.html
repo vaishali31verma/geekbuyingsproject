@@ -259,14 +259,25 @@ No sensitive machine parts, effective vibration resistance, quiet operation, and
     descimg.src=obj.descriptionimg;
     description.append(desc1,descimg)
 
+    //to add in "addcart"
     function buy(){
         if(items.length==0||items[items.length-1].detail!==obj.detail)
         items.push(obj)
         else
         items[items.length-1]=obj;
         localStorage.setItem("addcart",JSON.stringify(items))
-        // window.location.href=""
+
+        //changes cart items number in real time
+        document.getElementById("noofpro").innerText=items.length;
+        alert("Product added successfully")
     }
+    
+    //to redirect to cart page
+    bt2.addEventListener("click",()=>{
+        window.location.href="/geekbuyingsproject/cart/cart.html"
+    })
+        
+    
 
     //to check and display name in navbar
     var user = JSON.parse(localStorage.getItem("user"))
@@ -277,6 +288,5 @@ else{
   document.getElementById("signin").innerText = user.name
 }
 
-let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
-document.getElementById("noofpro").innerText = noofpro.length
+document.getElementById("noofpro").innerText = items.length
 </script>

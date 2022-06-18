@@ -224,9 +224,16 @@ High-speed transmission, built-in SATA3 standard protocol, M.2 brand solid state
     else
     items[items.length-1]=obj;
     localStorage.setItem("addcart",JSON.stringify(items))
-    console.log("yippee")
+    
+    document.getElementById("noofpro").innerText=items.length;
+    alert("Product added successfully")
 }
 
+//to redirect to cart page
+bt2.addEventListener("click",()=>{
+        window.location.href="/geekbuyingsproject/cart/cart.html"
+    })
+    
     //to check and display name in navbar
     var user = JSON.parse(localStorage.getItem("user"))
 if(user.name ==null){
@@ -236,6 +243,6 @@ else{
   document.getElementById("signin").innerText = user.name
 }
 
-let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
-document.getElementById("noofpro").innerText = noofpro.length
+
+document.getElementById("noofpro").innerText = items.length
 </script>

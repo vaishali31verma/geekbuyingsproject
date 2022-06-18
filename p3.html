@@ -224,9 +224,14 @@ Suitable for PC, Tablet PC, HTPC, IPTV, Web TV, Smart TV, Google TV, Android TV 
     items[items.length-1]=obj;
     let items=JSON.parse(localStorage.getItem("addcart"))||[];
     
-    console.log("yippee")
+    document.getElementById("noofpro").innerText=items.length;
+        alert("Product added successfully")
 }
 
+//to redirect to cart page
+bt2.addEventListener("click",()=>{
+        window.location.href="/geekbuyingsproject/cart/cart.html"
+    })
 
     //to check and display name in navbar
     var user = JSON.parse(localStorage.getItem("user"))
@@ -237,5 +242,5 @@ else{
   document.getElementById("signin").innerText = user.name
 }
 
-
+document.getElementById("noofpro").innerText = items.length
 </script>
