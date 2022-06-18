@@ -14,6 +14,10 @@ img.src = data.image;
 let det = document.querySelector("h5")
 det.innerText = data.detail
 
+
+let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
+document.getElementById("noofpro").innerText = noofpro.length
+
 let price = document.getElementById("price")
 price.innerText = "Rs" + data.original
 
@@ -58,6 +62,14 @@ let data8 = [{
 }]
 
 
+document.getElementById("buynow").addEventListener("click",function(){
+    window.location.href = "/geekbuyingsproject/cart/cart.html"
+})
+
+
+
+
+
 let appenddata = (data) => {
     data.forEach(ele => {
         let div = document.createElement("div")
@@ -72,6 +84,7 @@ document.getElementById("inc").addEventListener("click",inc)
 document.getElementById("dec").addEventListener("click",dec)
 
 var c =1
+
 function inc(){
     
     c++;
@@ -97,11 +110,18 @@ function dec(){
 var cart=JSON.parse(localStorage.getItem("addcart"))||[]
 
 document.getElementById("adddatatocart").addEventListener("click",function(){
+    
     addcart(data)
+    addcart(data)
+    window.location.reload()
+    alert("product added successfully")
+    
+
 })
 
 
 let addcart = (data)=>{
+
     var exist = cart.filter((el) => {
         return el.image == data.image
 })
@@ -117,7 +137,7 @@ let addcart = (data)=>{
         localStorage.setItem("addcart",JSON.stringify(cart))
         
     }
- 
+  
 }
   
 

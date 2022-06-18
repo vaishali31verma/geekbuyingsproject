@@ -46,12 +46,15 @@
 
     import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
      document.getElementById("navbar-top").innerHTML = navbar()
-      //------------------------------------------------------------------------//
+
+
+//------------------------------------------------------------------------//
     let images=['https://www.tronsmart.com/3531-thickbox_default/element-t6-plus-portable-bluetooth-speaker.jpg',
     'https://www.tronsmart.com/2787-thickbox_default/element-t6-plus-portable-bluetooth-speaker.jpg',
     'https://www.tronsmart.com/2075-thickbox_default/element-t6-plus-portable-bluetooth-speaker.jpg'
     ]
     let items=JSON.parse(localStorage.getItem("addcart"))||[];
+    document.getElementById("noofpro").innerText = items.length
     console.log(items)
     let obj={
         image:'https://img.gkbcdn.com/p/2019-03-18/tronsmart-element-t6-plus-bluetooth-speaker-black-1574132869322._w280_p1_.jpg',

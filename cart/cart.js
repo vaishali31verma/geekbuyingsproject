@@ -36,7 +36,7 @@ function displayData(data){
         let div3 = document.createElement("div");
         div3.setAttribute("id","c2")
         let price = document.createElement("p");
-        price.innerText = "₹ "+el.original
+        price.innerText = "₹ "+ el.original
 
         div3.append(price)
 
@@ -62,10 +62,10 @@ function displayData(data){
         let div5=document.createElement("div")
         div5.setAttribute("id","e2")
         let total = document.createElement("h3");
-        total.innerText = "₹ "+Number(count)*Number(el.original);
+        total.innerText = "₹ "+Number(count)*Math.floor(Number(el.original));
         div5.append(total)
        subTotal+= Number(count)*Number(el.original);
-        
+       subTotal = Math.floor(subTotal)
        sub.innerHTML = "₹ "+subTotal
         total1.innerHTML= "₹ "+subTotal
 
@@ -96,7 +96,7 @@ if(el.count>1){
 }
 
 
-    localStorage.setItem("products",JSON.stringify(products));
+    localStorage.setItem("addcart",JSON.stringify(products));
     window.location.reload()
 
 }

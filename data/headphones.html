@@ -94,7 +94,8 @@ if(user.name ==null){
 else{
   document.getElementById("signin").innerText = user.name
 }
-
+let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
+document.getElementById("noofpro").innerText = noofpro.length
 </script>
 <script type="module" src="../Brand/main.js"></script>
 <!-- <script src="headphones.js"></script> -->

@@ -56,7 +56,7 @@ background-color: #F2F2F2;
 }
 
 #images{
-    height: 60%;
+    height: 50%;
     width: 100%;
 }
 #new_arrived{
@@ -192,7 +192,7 @@ border-radius: 5px;
 }
 #box{
     padding: 10px 10px 10px 10px;
-    height: 320px;
+    height: 360px;
     background-color: #FFFFFF;
 }
 #box:hover{

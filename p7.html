@@ -46,12 +46,16 @@
 
     import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
      document.getElementById("navbar-top").innerHTML = navbar()
-      //------------------------------------------------------------------------//
+
+
+     
+     //------------------------------------------------------------------------//
 let images=['https://m.media-amazon.com/images/I/61s7HIvOAsL._SX679_.jpg',
     'https://m.media-amazon.com/images/I/61VRhutSuFL._SX679_.jpg',
     'https://m.media-amazon.com/images/I/61i9i1A-L1L._SX679_.jpg'
     ]
     let items=JSON.parse(localStorage.getItem("addcart"))||[];
+    document.getElementById("noofpro").innerText = items.length
     console.log(items)
     let obj={
         image:'https://img.gkbcdn.com/p/2017-07-26/xiaomi-wifi-amplifier-pro-black-1574132393616._w280_p1_.jpg',

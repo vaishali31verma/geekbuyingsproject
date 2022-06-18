@@ -250,4 +250,6 @@ if(user.name ==null){
 else{
   document.getElementById("signin").innerText = user.name
 }
+let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
+document.getElementById("noofpro").innerText = noofpro.length
 </script>

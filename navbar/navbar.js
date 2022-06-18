@@ -111,7 +111,7 @@ function navbar() {
         </div>
         <div id="top_navbar_second_cart" >
         <a href="/geekbuyingsproject/cart/cart.html"> <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/cart.png" alt=""></a>
-           
+         <p id="noofpro">0</p>  
         </div>
     </div>
     <div id="top_navbar_last">

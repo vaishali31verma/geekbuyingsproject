@@ -8,7 +8,7 @@ const getData = async ( url )=>{
         data = data.Electronics ;
         console.log("data", data);
         
-        let htol=document.getElementById("")
+        // let htol=document.getElementById("")
         return data;
         
 
@@ -24,6 +24,7 @@ const appendData = (data, main)=>{
         let div = document.createElement("div");
         div.addEventListener("click",function(){
             localStorage.setItem("item",JSON.stringify(ele));
+            window.location.href = "/geekbuyingsproject/showdetaileddata/showdata.html"
         })
 
         let image1 = document.createElement("img");

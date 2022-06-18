@@ -93,8 +93,11 @@ margin-top: 40px;
 </body>
 </html>
 <script>
+
+let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
+document.getElementById("noofpro").innerText = noofpro.length
     document.querySelector("#homepage").addEventListener("click",gotohomepage);
     function gotohomepage(){
-        window.location.href="/index.html";
+        window.location.href="/geekbuyingsproject/index.html";
     }
 </script>

@@ -49,7 +49,8 @@ div.addEventListener("mouseenter",function(){
         img.src = ele.img2 
 
 })
-
+let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
+document.getElementById("noofpro").innerText = noofpro.length
 
 div.addEventListener("mouseleave",function(){
     img.style.display = "block"

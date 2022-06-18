@@ -222,9 +222,12 @@ Suitable for PC, Tablet PC, HTPC, IPTV, Web TV, Smart TV, Google TV, Android TV 
     items.push(obj)
     else
     items[items.length-1]=obj;
-    localStorage.setItem("addcart",JSON.stringify(items))
+    let items=JSON.parse(localStorage.getItem("addcart"))||[];
+    
     console.log("yippee")
 }
+
+
     //to check and display name in navbar
     var user = JSON.parse(localStorage.getItem("user"))
 if(user.name ==null){
@@ -233,4 +236,6 @@ if(user.name ==null){
 else{
   document.getElementById("signin").innerText = user.name
 }
+
+
 </script>

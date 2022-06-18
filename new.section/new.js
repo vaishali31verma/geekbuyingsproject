@@ -1,6 +1,9 @@
-import {navbar,footer} from "../navbar/navbar.js"
-document.getElementById("top-navbar").innerHTML=navbar()
-document.getElementById("footer").innerHTML = footer()
+// import {navbar,footer} from "../navbar/navbar.js"
+// document.getElementById("top-navbar").innerHTML=navbar()
+// document.getElementById("footer").innerHTML = footer()
+// let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
+// document.getElementById("noofpro").innerText = noofpro.length
+
 
 let product = [
   {
@@ -338,7 +341,7 @@ box.addEventListener("click",function(){
 
 
 function catch1(elem){
-    localStorage.setItem("item",JSON.stringify(elem))
+    localStorage.setItem("item",JSON.stringify(elem))}
 // <<<<<<< link
 //     window.location.href = "../showdetaileddata/showdata.html"
 // } 
@@ -401,7 +404,7 @@ function sortLtH() {
   container.innerHTML = null;
   display(data);
 }
-}
+
 var user = JSON.parse(localStorage.getItem("user"))
 if(user.name ==null){
   document.getElementById("signin").innerText = "signin"
