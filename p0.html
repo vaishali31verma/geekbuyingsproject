@@ -59,7 +59,7 @@ import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
     'https://img203.yun300.cn/repository/image/e5f6789d-d2ef-4842-88f6-e02751c77d2f.jpg?tenantId=263312&viewType=1'
     ]
 
-    let items=JSON.parse(localStorage.getItem("cartitems"))||[];
+    let items=JSON.parse(localStorage.getItem("addcart"))||[];
     let obj={
         image:'https://img.gkbcdn.com/p/2018-11-22/netac-n600s-1tb-ssd-2-5-inch-solid-state-drive-blue-1571991121689._w280_p1_.jpg',
         fullname:'Netac N600S 1TB SSD 2.5 Inch Solid State Drive SATA3 Interface Read Speed 500MB/s - Blue',
@@ -264,7 +264,7 @@ No sensitive machine parts, effective vibration resistance, quiet operation, and
         items.push(obj)
         else
         items[items.length-1]=obj;
-        localStorage.setItem("cartitems",JSON.stringify(items))
+        localStorage.setItem("addcart",JSON.stringify(items))
         // window.location.href=""
     }
 

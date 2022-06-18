@@ -51,7 +51,7 @@
     'https://i.ebayimg.com/images/g/1q0AAOSwmtRgip0v/s-l500.jpg',
     'https://i.ebayimg.com/images/g/5EUAAOSwe7Bgiqzv/s-l500.jpg'
     ]
-    let items=JSON.parse(localStorage.getItem("cartitems"))||[];
+    let items=JSON.parse(localStorage.getItem("addcart"))||[];
     console.log(items)
     let obj={
         image:'https://img.gkbcdn.com/p/2017-11-25/mx3-l-m-backlight-voice-input-2-4ghz-wireless-air-mouse-1571989128244._w280_p1_.jpg',
@@ -222,7 +222,7 @@ Suitable for PC, Tablet PC, HTPC, IPTV, Web TV, Smart TV, Google TV, Android TV 
     items.push(obj)
     else
     items[items.length-1]=obj;
-    localStorage.setItem("cartitems",JSON.stringify(items))
+    localStorage.setItem("addcart",JSON.stringify(items))
     console.log("yippee")
 }
     //to check and display name in navbar

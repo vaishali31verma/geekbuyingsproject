@@ -52,7 +52,7 @@
     'https://www.tronsmart.com/2218-thickbox_default/tronsmart-element-mega-bluetooth-speaker.jpg'
 
     ]
-    let items=JSON.parse(localStorage.getItem("cartitems"))||[];
+    let items=JSON.parse(localStorage.getItem("addcart"))||[];
     console.log(items)
     let obj={
         image:'https://img.gkbcdn.com/p/2019-01-31/tronsmart-element-mega-bluetooth-speaker-black-1571991584812._w280_p1_.jpg',
@@ -239,7 +239,7 @@ Supports NFC connecting.`,
     items.push(obj)
     else
     items[items.length-1]=obj;
-    localStorage.setItem("cartitems",JSON.stringify(items))
+    localStorage.setItem("addcart",JSON.stringify(items))
     console.log("yippee")
 }
     //to check and display name in navbar

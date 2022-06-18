@@ -51,7 +51,7 @@
     'https://www.tronsmart.com/1947-thickbox_default/element-force-waterproof-portable-bluetooth-speaker.jpg',
     'https://www.tronsmart.com/1787-thickbox_default/element-force-waterproof-portable-bluetooth-speaker.jpg'
     ]
-    let items=JSON.parse(localStorage.getItem("cartitems"))||[];
+    let items=JSON.parse(localStorage.getItem("addcart"))||[];
     console.log(items)
     let obj={
         image:'https://img.gkbcdn.com/p/2019-01-31/tronsmart-element-force-portable-bluetooth-speaker-1571993707403._w280_p1_.jpg',
@@ -245,7 +245,7 @@ Connect and stream music easily with one-touch NFC technology.`,
     items.push(obj)
     else
     items[items.length-1]=obj;
-    localStorage.setItem("cartitems",JSON.stringify(items))
+    localStorage.setItem("addcart",JSON.stringify(items))
     console.log("yippee")
 }
     //to check and display name in navbar

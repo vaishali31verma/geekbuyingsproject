@@ -51,7 +51,7 @@
     'https://sc04.alicdn.com/kf/H210da676b7ce435fbee1bb239bf9ca30b.jpg',
     'https://sc04.alicdn.com/kf/H8bb220757c0c499e8d5ca4c8661cdcadM.jpg'
     ]
-    let items=JSON.parse(localStorage.getItem("cartitems"))||[];
+    let items=JSON.parse(localStorage.getItem("addcart"))||[];
     console.log(items)
     let obj={
         image:'https://img.gkbcdn.com/p/2017-11-25/mx3-l-m-backlight-voice-input-2-4ghz-wireless-air-mouse-1571989128244._w280_p1_.jpg',
@@ -250,7 +250,7 @@ The bag provides secure storage for your drone and all other parts so you can ca
     items.push(obj)
     else
     items[items.length-1]=obj;
-    localStorage.setItem("cartitems",JSON.stringify(items))
+    localStorage.setItem("addcart",JSON.stringify(items))
     console.log("yippee")
 }
     //to check and display name in navbar

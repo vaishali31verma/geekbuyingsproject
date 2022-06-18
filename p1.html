@@ -52,7 +52,7 @@
         'https://ae01.alicdn.com/kf/HTB15JRqV7voK1RjSZFwq6AiCFXa2/STmagic-SPT31-256GB-512GB-1TB-Mini-Portable-M-2-SSD-USB3-1-External-Solid-State-Drive.jpg_Q90.jpg_.webp'
 
     ]
-    let items=JSON.parse(localStorage.getItem("cartitems"))||[];
+    let items=JSON.parse(localStorage.getItem("addcart"))||[];
     console.log(items)
     let obj={
         image:'https://img.gkbcdn.com/p/2019-02-20/stmagic-spt31-512g-mini-portable-m-2-ssd-gray-1571995742585._w280_p1_.jpg',
@@ -223,7 +223,7 @@ High-speed transmission, built-in SATA3 standard protocol, M.2 brand solid state
     items.push(obj)
     else
     items[items.length-1]=obj;
-    localStorage.setItem("cartitems",JSON.stringify(items))
+    localStorage.setItem("addcart",JSON.stringify(items))
     console.log("yippee")
 }
 

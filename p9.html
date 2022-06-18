@@ -51,7 +51,7 @@
     'https://www.tronsmart.com/3882-thickbox_default/tronsmart-onyx-pure-hybrid-dual-driver-headphones.jpg',
     'https://www.tronsmart.com/3870-thickbox_default/tronsmart-onyx-pure-hybrid-dual-driver-headphones.jpg'
     ]
-    let items=JSON.parse(localStorage.getItem("cartitems"))||[];
+    let items=JSON.parse(localStorage.getItem("addcart"))||[];
     console.log(items)
     let obj={
         image:'https://www.tronsmart.com/3422-thickbox_default/tronsmart-onyx-ace-true-wireless-bluetooth-earphones.jpg',
@@ -236,7 +236,7 @@ Type-C Charging Port.`,
     items.push(obj)
     else
     items[items.length-1]=obj;
-    localStorage.setItem("cartitems",JSON.stringify(items))
+    localStorage.setItem("addcart",JSON.stringify(items))
     console.log("yippee")
 }
     //to check and display name in navbar
