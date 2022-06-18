@@ -1,4 +1,4 @@
-let products = JSON.parse(localStorage.getItem("products"));
+let products = JSON.parse(localStorage.getItem("addcart"));
 let pro = document.getElementById("product")
 //let items = document.querySelector(".items")
 let ship = document.querySelector("#ship")
@@ -19,7 +19,7 @@ function displayData(data){
     data.forEach(function(el,index){
 
 
-        let count = el.desc || 1;
+        let count = el.count || 1;
         let div = document.createElement("div");
         div.setAttribute("class","items")
         let div1 = document.createElement("div");
@@ -31,12 +31,12 @@ function displayData(data){
         let div2 = document.createElement("div");
         div2.setAttribute("id","b2")
         let des = document.createElement("p");
-        des.innerText = el.type;
+        des.innerText = el.detail;
         div2.append(des)
         let div3 = document.createElement("div");
         div3.setAttribute("id","c2")
         let price = document.createElement("p");
-        price.innerText = "₹ "+el.price
+        price.innerText = "₹ "+el.original
 
         div3.append(price)
 
@@ -62,9 +62,9 @@ function displayData(data){
         let div5=document.createElement("div")
         div5.setAttribute("id","e2")
         let total = document.createElement("h3");
-        total.innerText = "₹ "+Number(count)*Number(el.price);
+        total.innerText = "₹ "+Number(count)*Number(el.original);
         div5.append(total)
-       subTotal+= Number(count)*Number(el.price);
+       subTotal+= Number(count)*Number(el.original);
         
        sub.innerHTML = "₹ "+subTotal
         total1.innerHTML= "₹ "+subTotal
@@ -91,8 +91,8 @@ function displayData(data){
 localStorage.setItem("total",JSON.stringify(subTotal))
 
 function  decCount(el){
-if(el.desc>1){
-    el.desc--;
+if(el.count>1){
+    el.count--;
 }
 
 
@@ -103,15 +103,15 @@ if(el.desc>1){
 
 function  incCount(el){
 
-    el.desc++;
-    localStorage.setItem("products",JSON.stringify(products));
+    el.count++;
+    localStorage.setItem("addcart",JSON.stringify(products));
     window.location.reload()
 
 }
 
 function deleteItem(el,index){
     products.splice(index,1);
-    localStorage.setItem("products",JSON.stringify(products));
+    localStorage.setItem("addcart",JSON.stringify(products));
     window.location.reload()
 }
 
