@@ -63,7 +63,7 @@ let data8 = [{
 
 
 document.getElementById("buynow").addEventListener("click",function(){
-    window.location.href = "/geekbuyingsproject/cart/cart.html"
+    window.location.href = "cart.html"
 })
 
 

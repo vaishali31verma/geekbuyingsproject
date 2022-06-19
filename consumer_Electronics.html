@@ -85,7 +85,7 @@
 
     import{getData, appendData} from "../fetchappend/fetchpages.js"
 
-    let resp = await getData("./conElectronics.json");
+    let resp = await getData("./data/conElectronics.json");
     console.log("respfrommodule", resp);
     appendData(resp, main)
     var user = JSON.parse(localStorage.getItem("user"))

@@ -15,8 +15,8 @@
         <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg" alt="">
     </div>
     <div id="bigboxx">
-        <div id="leftcon">
-            <h2><b>Consumer Electronics</b></h2>
+         <div id="leftcon">
+            <h2><b></b></h2>
             <a href="consumer_Electronics.html" class="anc"><h3>Consumer Electronics</h3></a>
             <a href="wearable_Devices.html" class="anc"><h3>Wearable Devices</h3></a>
             <a href="bluetooth_speaker.html" class="anc"><h3>Blutooth Speakers</h3></a>
@@ -34,7 +34,8 @@
         </div>
         <div class="SSlider">
             <div class="slidenxt">
-                <img src="https://img.gkbcdn.com/s3/c/2202/111-6209f3ab2b40c91f10b1fdbd.gif" alt="">
+                <img src="https://img.gkbcdn.com/s3/c/2104/20210416172510647q10.jpg" alt="">
+                 <img src="https://img.gkbcdn.com/s3/c/2202/111-6209f3ab2b40c91f10b1fdbd.gif" alt="">
             </div>
             
         </div>
@@ -65,37 +66,36 @@
         <img src="https://img.gkbcdn.com/s3/c/2205/BANG-62904bf72b40c91cb019ade1.png" alt="">
 
        </div>
-       
+         
        <div id="pgrid">
 
        </div>
 
 
     </div>
-   
- <div id="footer"></div>
+   <div id="footer"></div>
+
 </body>
 </html>
 
 <script type="module">
-    let main = document.getElementById("pgrid")
+     let main = document.getElementById("pgrid")
 
-    import {getData, appendData} from "../fetchappend/fetchpages.js"
+import {getData, appendData} from "../fetchappend/fetchpages.js" 
 
-    let resp = await getData("./weaDevices.json");
-    console.log("respfrommodule", resp);
-    appendData(resp, main)
-    var user = JSON.parse(localStorage.getItem("user"))
+let resp = await getData("./data/headphone.json");
+ console.log("respfrommodule", resp);
+appendData(resp, main)
+
+var user = JSON.parse(localStorage.getItem("user"))
 if(user.name ==null){
   document.getElementById("signin").innerText = "signin"
 }
 else{
   document.getElementById("signin").innerText = user.name
 }
-
 let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
 document.getElementById("noofpro").innerText = noofpro.length
 </script>
 <script type="module" src="../Brand/main.js"></script>
-
-<!-- <script src="wearable_Devices.js"></script> -->
+<!-- <script src="headphones.js"></script> -->

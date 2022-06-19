@@ -364,3 +364,20 @@ font-size: 13px;
     text-decoration: none;
     color: gray;
 }
+#noofpro{
+    border: 2px solid rgb(247, 4, 4); 
+    display: block;
+    margin: auto;
+    width: 21px;
+    height: 21px;
+   margin-left: 37px;
+   margin-top: -32px;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   font-size: 12px;
+   border-radius:50%; 
+   background-color: rgb(225, 70, 70);
+   position: absolute;
+
+
+}

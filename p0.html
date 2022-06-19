@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="commonstyles.css">
-<link rel="stylesheet" href="../geekbuyingsproject/style/navbar.css">
+<link rel="stylesheet" href="./style/navbar.css">
 <body>
     <div id="navbar-top">
 
@@ -51,7 +51,7 @@
 </html>
 <script type="module">
 
-import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
+import {navbar,footer} from "./navbar/navbar.js"
  document.getElementById("navbar-top").innerHTML = navbar()
     let images=[
     "https://img203.yun300.cn/repository/image/fe39c25e-28ab-4eff-bf89-8e9e2d164df9.jpg?tenantId=263312&viewType=1",
@@ -274,7 +274,7 @@ No sensitive machine parts, effective vibration resistance, quiet operation, and
     
     //to redirect to cart page
     bt2.addEventListener("click",()=>{
-        window.location.href="/geekbuyingsproject/cart/cart.html"
+        window.location.href="cart.html"
     })
         
     

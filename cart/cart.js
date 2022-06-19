@@ -64,7 +64,7 @@ function displayData(data){
         let total = document.createElement("h3");
         total.innerText = "₹ "+Number(count)*Math.floor(Number(el.original));
         div5.append(total)
-       subTotal+= Number(count)*Number(el.original);
+       subTotal+= Number(count)*Math.floor(Number(el.original));
        subTotal = Math.floor(subTotal)
        sub.innerHTML = "₹ "+subTotal
         total1.innerHTML= "₹ "+subTotal
@@ -116,5 +116,5 @@ function deleteItem(el,index){
 }
 
 document.querySelector("#e1").addEventListener("click",function(){
-    window.location.href="../Shipping page/shipping.html"
+    window.location.href="/shipping.html"
 })

@@ -339,7 +339,7 @@ box.addEventListener("click",function(){
 
 function catch1(elem){
     localStorage.setItem("item",JSON.stringify(elem))
-window.location.href="../showdetaileddata/showdata.html"
+window.location.href="showdata.html"
 }
 function seven() {
   let data = JSON.parse(localStorage.getItem("product"));
@@ -396,10 +396,4 @@ function sortLtH() {
   display(data);
 }
 
-var user = JSON.parse(localStorage.getItem("user"))
-if(user.name ==null){
-  document.getElementById("signin").innerText = "signin"
-}
-else{
-  document.getElementById("signin").innerText = user.name
-}
+

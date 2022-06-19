@@ -24,7 +24,7 @@ const appendData = (data, main)=>{
         let div = document.createElement("div");
         div.addEventListener("click",function(){
             localStorage.setItem("item",JSON.stringify(ele));
-            window.location.href = "/geekbuyingsproject/showdetaileddata/showdata.html"
+            window.location.href = "showdata.html"
         })
 
         let image1 = document.createElement("img");
