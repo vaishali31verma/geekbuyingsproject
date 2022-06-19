@@ -127,6 +127,7 @@ border-radius: 5px;
 
 #price{
     margin-right: -4px;
+    height: 2px;
 }
 #sort_by{
     display: flex;
@@ -167,7 +168,8 @@ border-radius: 5px;
 #boxp{
     display: flex;
     justify-content: space-between;
-   
+    /* height: 40%; */
+   margin-top: -20px;
 }
 #details{
     color: #000;
@@ -192,7 +194,8 @@ border-radius: 5px;
 }
 #box{
     padding: 10px 10px 10px 10px;
-    height: 360px;
+    height: 330px;
+   border-radius: 5px;
     background-color: #FFFFFF;
 }
 #box:hover{
@@ -200,8 +203,8 @@ border-radius: 5px;
 }
 #price{
     
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 2px;
     font-weight: bold;
     display: block;
     color: #333
@@ -211,14 +214,19 @@ border-radius: 5px;
 display: flex;
 justify-content: space-between;
 padding: 0px 10px 0px 10px;
+margin-top: -18px;
+}
+#cat>div:nth-child(1){
+    margin-top: 8px;
+    margin-bottom: 9px;
 }
 #cat>div>p:nth-child(1){
     display: inline-block;
-    height: 28px;
+    /* height: 20px; */
     width: 90%;
     color: #333;
     font-size: 14px;
-    line-height: 28px;
+
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -230,7 +238,7 @@ padding: 0px 10px 0px 10px;
     font-size: 14px;
     font-weight: bold;
     line-height: 24px;
-    margin-top: 10px;
+    
 }
 #sortt{
     display: flex;
