@@ -19,7 +19,7 @@ let display5 = (data,con) => {
       h4.setAttribute("class", "discri1")
   
       var p = document.createElement("p")
-      p.innerText = el.original
+      p.innerText = "₹"+el.original
       p.setAttribute("class", "priced1")
       
     //   div2.append(img, h5, h4, p)

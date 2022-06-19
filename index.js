@@ -149,7 +149,7 @@ let display1 = (data1) => {
 display1(data1)
 let datainlocal = (el) => {
   localStorage.setItem("item", JSON.stringify(el))
-  window.location.href = "../geekbuyingsproject/showdetaileddata/showdata.html"
+  window.location.href = "showdata.html"
 }
 
 var data2 = [{

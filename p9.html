@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="commonstyles.css">
-<link rel="stylesheet" href="../geekbuyingsproject/style/navbar.css">
+<link rel="stylesheet" href="./style/navbar.css">
 <body>
     <div id="navbar-top">
 
@@ -44,7 +44,7 @@
 </html>
 <script type="module">
 
-    import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
+    import {navbar,footer} from "./navbar/navbar.js"
      document.getElementById("navbar-top").innerHTML = navbar()
     //------------------------------------------------------------------------//
     let images=['https://www.tronsmart.com/3861-thickbox_default/tronsmart-onyx-pure-hybrid-dual-driver-headphones.jpg',
@@ -244,7 +244,7 @@ Type-C Charging Port.`,
 
 //to redirect to cart page
 bt2.addEventListener("click",()=>{
-        window.location.href="/geekbuyingsproject/cart/cart.html"
+        window.location.href="cart.html"
     })
 
     //to check and display name in navbar

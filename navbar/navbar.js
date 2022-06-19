@@ -48,7 +48,7 @@ function navbar() {
     </div>
     <div id="top_navbar_second">
         <div id="top_navbar_second_img">
-        <a href="/geekbuyingsproject/index.html"> <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/Geekbuying.png" alt=""></a>
+        <a href="index.html"> <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/Geekbuying.png" alt=""></a>
            
         </div>
         <div id="top_navbar_second_search">
@@ -105,24 +105,24 @@ function navbar() {
         </div>
         </div>
         <div id="top_navbar_second_user">
-        <a href="/geekbuyingsproject/credential/signin.html"> <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1510/ylivdesign151000120/46153782-profile-icon-white-simple-image-isolated-on-blue-background.jpg?ver=6" alt=""></a>
+        <a href="signin.html"> <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1510/ylivdesign151000120/46153782-profile-icon-white-simple-image-isolated-on-blue-background.jpg?ver=6" alt=""></a>
            
             <p id="signin"></p>
         </div>
         <div id="top_navbar_second_cart" >
-        <a href="/geekbuyingsproject/cart/cart.html"> <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/cart.png" alt=""></a>
+        <a href="cart.html"> <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/cart.png" alt=""></a>
          <p id="noofpro">0</p>  
         </div>
     </div>
     <div id="top_navbar_last">
         <div id="top_category">Categories 
             <div id="drop_category">
-            <a class="option" href="/geekbuyingsproject/data/bluetooth_speaker.html"><p>Bluetooth Speakers</p></a>
+            <a class="option" href="bluetooth_speaker.html"><p>Bluetooth Speakers</p></a>
           
-               <a class="option" href="/geekbuyingsproject/data/headphones.html"><p>Headphones</p></a>
-               <a class="option" href="/geekbuyingsproject/data/wearable_Devices.html"><p>Wearable devices</p></a>
+               <a class="option" href="headphones.html"><p>Headphones</p></a>
+               <a class="option" href="wearable_Devices.html"><p>Wearable devices</p></a>
                <p>Smart Home & Garden</p>
-               <a class="option" href="/geekbuyingsproject/data/consumer_Electronics.html"><p>Consumer Electronics</p></a>
+               <a class="option" href="consumer_Electronics.html"><p>Consumer Electronics</p></a>
                
                <p>TV Boxes & Mini PCs</p>
                <p>Computer & Tablets</p>
@@ -136,9 +136,9 @@ function navbar() {
             </div>
         </div>
         <div id="all_options_categories">
-        <div ><a class="newxx" href="/geekbuyingsproject/new.section/new.html">New</a></div>
-        <div><a class="newxx"  href="/geekbuyingsproject/bestselling.html">BestSelling</a></div>
-        <div><a class="newxx" href="/geekbuyingsproject/Brand/brand.html">Brand</a></div>
+        <div ><a class="newxx" href="new.html">New</a></div>
+        <div><a class="newxx"  href="bestselling.html">BestSelling</a></div>
+        <div><a class="newxx" href="brand.html">Brand</a></div>
         <div>Clearance</div>
         <div>Deals</div>
         <div>Coupons</div>

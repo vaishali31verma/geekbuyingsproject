@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmation</title>
     <link rel="shortcut icon" type="image/ico" href="https://m.geekbuying.com/favicon.ico">
-   
+
     <style>
-        *{
+        * {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-             'Open Sans', 'Helvetica Neue', sans-serif;
+                'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
 
-        #header{
+        #header {
             /* border: 1px solid red; */
             width: 100%;
             height: 120px;
             background-color: #06fd;
 
         }
-
-        #header>img{
-margin: auto;
-margin-left: 20px;
-margin-top: 40px;
+        #header>img {
+            margin: auto;
+            margin-left: 20px;
+            margin-top: 40px;
             height: 50%;
         }
-
-        #center{
-           
+        #center {
             width: 40%;
             height: auto;
             margin: auto;
             margin-top: 80px;
             text-align: center;
         }
-
-        p{
+        p {
             opacity: 0.6;
             margin-top: 40px;
         }
 
-        #bottom{
-          
+        #bottom {
+
             height: 50px;
             width: 50%;
             margin: auto;
@@ -53,7 +50,7 @@ margin-top: 40px;
             justify-content: space-around;
         }
 
-        #track{
+        #track {
             width: 20%;
             font-size: large;
             background: #06f;
@@ -61,43 +58,49 @@ margin-top: 40px;
             border: 0px;
         }
 
-        #homepage{
-            width: 20%;
+        #homepage {
+            width: 100%;
+            padding: 13px 13px;
             font-size: large;
-            background: #06f;
+            background-color: #06f;
             color: aliceblue;
             border: 0px;
             cursor: pointer;
         }
     </style>
 </head>
+
 <body>
-<div id="header">
-    <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/Geekbuying.png" alt="">
-</div>
+    <div id="header">
+        <img src="https://content1.geekbuying.com/V1.4/en/images/indexV7/Geekbuying.png" alt="">
+    </div>
 
     <div id="center">
-<h1>Order Successfully Placed.</h1>
+        <h1>Order Successfully Placed.</h1>
 
-<p>Your order will be delivered between Mon 20, June 2022 and Wed 22, June 2022.</p>
-<h3>We are pleased to confirm your order no. OD30846002458728700.</h3>
-<h3>Thank you for shopping with Geekbuying!</h3>
+        <p>Your order will be delivered between Mon 20, June 2022 and Wed 22, June 2022.</p>
+        <h3>We are pleased to confirm your order no. OD30846002458728700.</h3>
+        <h3>Thank you for shopping with Geekbuying!</h3>
 
 
     </div>
 
     <div id="bottom">
-<input type="Submit" name="" id="track" value="Track Order">
-<input type="submit" name="" id="homepage"  value="Homepage">
+        <input type="Submit" name="" id="track" value="Track Order">
+
+        <a href="index.html"><button id="homepage">Homepage</button></a>
+        <!-- <input type="submit" name="" id="homepage"  value="Homepage"></a> -->
+
     </div>
 </body>
+
 </html>
 <script>
 
-let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
-document.getElementById("noofpro").innerText = noofpro.length
-    document.querySelector("#homepage").addEventListener("click",gotohomepage);
-    function gotohomepage(){
-        window.location.href="/geekbuyingsproject/index.html";
-    }
+    let noofpro = JSON.parse(localStorage.getItem("addcart")) || []
+    document.getElementById("noofpro").innerText = noofpro.length
+    document.querySelector("#homepage").addEventListener("click", gotohomepage);
+    // function gotohomepage() {
+    //     window.location.href = "index.html";
+    // }
 </script>

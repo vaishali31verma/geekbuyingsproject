@@ -18,10 +18,10 @@ let products = JSON.parse(localStorage.getItem("addcart"));
         des.innerText=el.detail;
 
         let cou = document.createElement("p");
-        cou.innerText = "X"+el.count;
+        cou.innerText = "x"+el.count;
 
         let price = document.createElement("p");
-        price.innerText ="₹ "+el.original*el.count;
+        price.innerText ="₹ "+ Math.floor(el.original)*el.count;
 
         div.append(img,des,cou,price);
         pro.append(div)
@@ -34,11 +34,11 @@ let products = JSON.parse(localStorage.getItem("addcart"));
  aws.innerText = "₹ "+Number(total);
 
  let red = document.querySelector("#red");
- let x = Number(total)-Number(500);
+ let x = Number(total)+Number(500);
  red.innerText = "₹ "+x
 
  localStorage.setItem("final",JSON.stringify(x))
 
  document.querySelector("#btn").addEventListener("click",function(){
-    window.location.href="../payment/payment.html"
+    window.location.href="payment.html"
  })

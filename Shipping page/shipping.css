@@ -85,13 +85,16 @@ label{
     font-size: 12px;
 }
 #submit{
+    display: block;
+    margin: auto;
     width: 110px;
     color: white;
     background-color: rgb(58, 58, 238);
     border: none;
     border-radius: 5px;
     margin-left: 220px;
-    margin-top: 40px;
+    margin-top: 20px;
+    text-align: center;
 }
 #submit:hover{
     cursor: pointer;

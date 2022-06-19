@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="commonstyles.css">
-<link rel="stylesheet" href="../geekbuyingsproject/style/navbar.css">
+<link rel="stylesheet" href="./style/navbar.css">
 <body>
     <div id="navbar-top">
 
@@ -44,7 +44,7 @@
 </html>
 <script type="module">
 
-    import {navbar,footer} from "../geekbuyingsproject/navbar/navbar.js"
+    import {navbar,footer} from "./navbar/navbar.js"
      document.getElementById("navbar-top").innerHTML = navbar()
     let images=[
         "https://ae01.alicdn.com/kf/HTB12BduV4YaK1RjSZFnq6y80pXaC/STmagic-SPT31-256GB-512GB-1TB-Mini-Portable-M-2-SSD-USB3-1-External-Solid-State-Drive.jpg_Q90.jpg_.webp",
@@ -231,7 +231,7 @@ High-speed transmission, built-in SATA3 standard protocol, M.2 brand solid state
 
 //to redirect to cart page
 bt2.addEventListener("click",()=>{
-        window.location.href="/geekbuyingsproject/cart/cart.html"
+        window.location.href="cart.html"
     })
     
     //to check and display name in navbar

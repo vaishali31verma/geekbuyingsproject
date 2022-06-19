@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../prostyles/main.css">
-    <link rel="stylesheet" href="../style/navbar.css">
-    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="./prostyles/main.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
 </head>
 <body>
     <div id="top-navbar"></div>
@@ -15,8 +15,8 @@
         <img src="https://img.gkbcdn.com/s3/bn/2206/1500x125-62a9512c2b40c91d488eee03.jpg" alt="">
     </div>
     <div id="bigboxx">
-         <div id="leftcon">
-            <h2><b></b></h2>
+        <div id="leftcon">
+            <h2><b>Consumer Electronics</b></h2>
             <a href="consumer_Electronics.html" class="anc"><h3>Consumer Electronics</h3></a>
             <a href="wearable_Devices.html" class="anc"><h3>Wearable Devices</h3></a>
             <a href="bluetooth_speaker.html" class="anc"><h3>Blutooth Speakers</h3></a>
@@ -34,8 +34,7 @@
         </div>
         <div class="SSlider">
             <div class="slidenxt">
-                <img src="https://img.gkbcdn.com/s3/c/2104/20210416172510647q10.jpg" alt="">
-                 <img src="https://img.gkbcdn.com/s3/c/2202/111-6209f3ab2b40c91f10b1fdbd.gif" alt="">
+                <img src="https://img.gkbcdn.com/s3/c/2202/111-6209f3ab2b40c91f10b1fdbd.gif" alt="">
             </div>
             
         </div>
@@ -63,31 +62,37 @@
         </div>
        </div>
        <div id="doFilter">
-        <img src="https://img.gkbcdn.com/s3/c/2205/BANG-62904bf72b40c91cb019ade1.png" alt="">
+        <img src="https://img.gkbcdn.com/s3/c/2019-12/b2ba1545-d1fd-40c1-b10f-fbc34b8e5c94.jpg" alt="">
+        <div id="filters"></div>
+        <div id="sortings">
+            
+      
 
-       </div>
-         
+      
        <div id="pgrid">
 
        </div>
 
 
     </div>
-   <div id="footer"></div>
-
+       </div>
+  </div>
+  
+  <div id="footer"></div>
 </body>
 </html>
 
 <script type="module">
-     let main = document.getElementById("pgrid")
 
-import {getData, appendData} from "../fetchappend/fetchpages.js" 
+    let main = document.getElementById("pgrid")
 
-let resp = await getData("./headphone.json");
- console.log("respfrommodule", resp);
-appendData(resp, main)
+   import {getData, appendData} from "../fetchappend/fetchpages.js" 
 
-var user = JSON.parse(localStorage.getItem("user"))
+   let resp = await getData("./data/bluspeaker.json");
+    console.log("respfrommodule", resp);
+   appendData(resp, main)
+
+   var user = JSON.parse(localStorage.getItem("user"))
 if(user.name ==null){
   document.getElementById("signin").innerText = "signin"
 }
@@ -96,6 +101,7 @@ else{
 }
 let noofpro = JSON.parse(localStorage.getItem("addcart")) ||[]
 document.getElementById("noofpro").innerText = noofpro.length
+   
 </script>
-<script type="module" src="../Brand/main.js"></script>
-<!-- <script src="headphones.js"></script> -->
+ <script type="module" src="../Brand/main.js"></script> 
+<!-- <script src="bluetooth_speaker.js"></script> -->
