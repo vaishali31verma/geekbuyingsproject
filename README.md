@@ -40,7 +40,7 @@ We accept all the popular payment methods.
 
 - [Pooja Kanade](https://github.com/Pooja18668)
 
-- [Bishal Sharma]()
+- [Bishal Sharma](https://github.com/bishal00sharma)
 
 - [Hemant Sharma](https://github.com/hemant097)
 
