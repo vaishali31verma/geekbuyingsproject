@@ -34,7 +34,7 @@ We accept all the popular payment methods.
 
 - [Vaishali Verma](https://github.com/vaishaliverma31)
 
-- [Sourav Barnwal](https://github.com/sauravbarnwal9)
+- [Saurav Barnwal](https://github.com/sauravbarnwal9)
 
 - [Akash Singh](https://github.com/akashsinghdto55)
 
