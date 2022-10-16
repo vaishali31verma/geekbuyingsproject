@@ -6,7 +6,16 @@ have a massive selection of products and
 offer unbeatable prices. If you are looking 
 for the latest and the greatest product in 
 categories like smart home and outdoor 
-gadgets, Geekbuying is where you should be!
+gadgets, Geekbuying is where you should be!.
+Go to website - https://nimble-melba-09757f.netlify.app/
+
+![GeekBuying](/assets/geekbuying_cone.png)
+![GeekBuying](/assets/gb%20login.png)
+![GeekBuying](/assets/gb%20new%20arr.png)
+![GeekBuying](/assets/gb%20product%20page.png)
+![GeekBuying](/assets/shipping2.png)
+![GeekBuying](/assets/payment.png)
+![GeekBuying](/assets/final.png)
 
 Geekbuying is the ultimate shopping hub for 
 new releases covering smart home products like 
